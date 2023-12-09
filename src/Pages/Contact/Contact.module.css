@@ -1,0 +1,119 @@
+.contact_form_container{
+    margin: 6rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: fit-content;
+    /* background-color:#E7F6FD; */
+    padding: 4rem;
+}
+.contact_form input, .contact_form button{
+    width: 40vw;
+    height: 40px;
+    box-shadow: rgba(136, 165, 191, 0.24) 6px 2px 16px 0px, rgba(255, 255, 255, 0.226) -6px -2px 16px 0px;
+    border: none;
+    border: 1px solid #c2c2c2;
+   
+}
+.contact_form button{
+         background-color: var(--color-primary-dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: 1px solid var(--color-primary-dark);
+        color: white;
+        cursor: pointer;
+      
+}
+.contact_form button:disabled{
+    background-color: #c9b36c;
+    border: none;
+    cursor: not-allowed;
+}
+.contact_form input{
+    padding-left: 20px;
+}
+.contact_form textarea{
+    height: 100px;
+    width: 40vw;
+    box-shadow: rgba(136, 165, 191, 0.24) 6px 2px 16px 0px, rgba(255, 255, 255, 0.226) -6px -2px 16px 0px;
+    
+    border: 1px solid #c2c2c2;
+   
+    padding: 20px;
+}
+
+.contact_main{
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+.contact_main_item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #555555;
+}
+.contact_main_item div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.contact_main_header{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.contact_main_header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 64px;
+    bottom: -10px;
+
+    background-color: var(--color-primary);
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+.map_item{
+    width: 95vw;
+    height: 300px;
+    border: none;
+}
+@media screen and (max-width:1024px){
+    .contact_form_container{
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+    .contact_form input, .contact_form button{
+        width: 70vw;
+    }
+    .contact_form textarea{
+        width: 70vw;
+    }
+   
+}
+@media screen and (max-width:576px){
+    .contact_main{
+        padding: 2rem;
+    }
+    .contact_form input, .contact_form button{
+        width: 90vw;
+    }
+    .contact_form textarea{
+        width: 90vw;
+    }
+}

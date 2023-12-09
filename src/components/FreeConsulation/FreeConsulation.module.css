@@ -1,0 +1,73 @@
+.consulationSection {
+  background-image: linear-gradient(#1a1a1834,#1a1a1834), url("/Images/Home/banner_image.jpg");
+  padding: 5rem;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin-block: 7rem;
+  overflow: hidden;
+}
+
+/* content */
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem 1.5rem;
+  z-index: 5;
+  position: relative;
+}
+
+.sectionHeading {
+  font-size: 4.5rem;
+  position: relative;
+  padding-top: 3rem;
+}
+
+/* .sectionHeading::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 4px;
+  width: 64px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary);
+} */
+
+.description {
+  font-size: 1.45rem;
+  color: #faf8fd;
+  line-height: 27px;
+  margin-block: 0rem 2rem;
+  width: 60ch;
+  text-shadow: 2px 2px #000;
+  font-weight: 500;
+}
+
+/* background overlay */
+
+.backgroundOverlay {
+  background-color: #1a1a1a;
+  opacity: 0.45;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+@media screen and (max-width:756px){
+  .description {
+    font-size: 1.3rem;
+    width: 90vw;
+  }
+  .sectionHeading {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,33 @@
+.container{
+    background: linear-gradient(#0000003b,#0000003b),url(/public/Images/home_consultation.JPG);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    color: white;
+    max-width: 1500px;
+    margin: auto;
+}
+.content_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    width: 80vw;
+    margin-block: 2rem;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+}
+@media screen and (max-width:650px){
+    .content_card{
+        flex-direction: column;
+        gap: 1rem;
+        width: 300px;
+    }
+
+}

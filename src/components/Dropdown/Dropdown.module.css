@@ -1,0 +1,21 @@
+.container{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    padding: 1.5rem 1rem;
+}
+.dropdown_list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.dropdown_list >:nth-child(even){
+    padding-block: 5px;
+    border-block: 1px solid rgb(211, 211, 211);
+}
+.container ul li a{
+    color: rgb(82, 82, 82);
+    
+}

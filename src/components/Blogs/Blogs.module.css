@@ -1,0 +1,22 @@
+.blog_container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 4rem;
+}
+.header{
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+}
+.header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 64px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+}

@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem auto;
+    padding-block: 4rem;
+    background: rgb(255, 237, 237);
+    max-width: 1500px;
+}
+.header{
+    margin-bottom: 2rem;
+}
+.image{
+    width: 40vw;
+    overflow: hidden;
+}
+
+.list{
+    list-style: none;
+}
+.list_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media screen and (max-width:756px){
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+    .image{
+        width: 90vw;
+        /* margin: auto; */
+    }
+}

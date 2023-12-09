@@ -1,0 +1,15 @@
+.container{
+    margin: 5rem;
+}
+.header > h2{
+    margin-bottom: 2rem;
+}
+.image{
+    border: 1px solid rgb(192, 192, 192);
+}
+@media screen and (max-width:756px){
+    .container{
+        margin: 5rem 2rem;
+    }
+
+}

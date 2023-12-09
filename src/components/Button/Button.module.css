@@ -1,0 +1,50 @@
+.btn {
+  color: white;
+  font-size: 1.278rem;
+  font-weight: 600;
+  padding: 1.8rem 3.2rem;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  display: block;
+}
+
+/* Button Primary */
+
+.btnPrimary {
+  background-color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--color-primary-dark);
+}
+
+.btnPrimary svg {
+  width: 12.76px;
+  height: 12.76px;
+  fill: white;
+}
+
+.btnPrimary:hover {
+  background-color: white;
+  color: black;
+
+}
+.btnPrimary:hover .arrow{
+  filter: invert(1);
+}
+
+
+
+.btnSecondary {
+  color: white;
+  background-color: var(--color-primary);
+}
+.btnSecondary:hover{
+  color: black;
+  background-color: white;
+  border: 1px solid var(--color-primary);
+}

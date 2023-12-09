@@ -1,0 +1,50 @@
+.container{
+    margin: auto;
+    max-width: 1500px;
+    margin-inline: 4rem;
+}
+.content_exterior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.content_interior{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.perSlide{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+.perSlide > img{
+    height: 250px;
+    /* width: 300px; */
+    object-fit: cover;
+}
+.text_content{
+    width: 30vw;
+    
+    /* padding-left: 6rem; */
+}
+.text_content > p{
+    text-align: justify;
+}
+.slider{
+    width: 70vw;
+}
+.info{
+    font-size: 14px;
+}
+.head{
+    font-size: 3rem;
+    margin-block: 1rem 2rem;
+}
+.subhead{
+    color: var(--color-primary-dark);
+}
+
