@@ -1,8 +1,13 @@
 .container{
-    margin: 5rem;
+    padding: 5rem;
+    max-width: 1600px;
+    margin: auto;
 }
 .header > h2{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.header > p{
+    color: rgb(124, 124, 124);
 }
 .image{
     border: 1px solid rgb(192, 192, 192);

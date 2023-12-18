@@ -1,54 +1,22 @@
 import React from 'react'
 import styles from './ProjectReach.module.css'
 import { BsCaretRightFill } from "react-icons/bs";
+import { publicURL } from '../../api/axiosConfig';
 
-const ProjectReach = () => {
+const ProjectReach = ({withinReach,image}) => {
   return (
     <section className={styles.container}>
-        <img src="/Images/location.jpg" alt="" className={styles.image} />
+        <img src={`${publicURL}${image}`} alt="" className={styles.image} />
         <div className={styles.content}>
             <h2 className={styles.header}>Everything within Reach</h2>
             <ul className={styles.list}>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}> 
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
-                <li className={styles.list_item}>
-                    <BsCaretRightFill />
-                    <p>ISBT, Balaji Temple - 5.3 Km</p>
-                </li>
+                {withinReach.map((item,index)=> (
+                        <li className={styles.list_item}>
+                        <BsCaretRightFill />
+                        <p>{item?.name} - {item.distance}</p>
+                    </li>
+                ))}
+                
             </ul>
         </div>
     </section>

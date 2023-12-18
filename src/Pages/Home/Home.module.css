@@ -1,14 +1,15 @@
 .homeContainer {
   position: relative;
-  background-image: linear-gradient(to bottom, #03975967,#03975931),url(/Images/Home/banner_image.jpg);
-  background-position:bottom;
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-image: linear-gradient(to bottom, #03975967,#03975931),url(/Images/Home/banner_image.jpg); */
+  /* background-position:bottom;
+  background-attachment: fixed; */
+  /* background-size: cover; */
   color: white;
   padding: 16rem 6rem 16rem;
   position: relative;
 
 }
+
 
 
 .heading {
@@ -50,14 +51,15 @@
   font-size: 4rem;
   padding-left: 8rem ;
   padding-block: 6rem;
-  background: linear-gradient(to bottom, #03975967,#03975931), url(/Images/Home/banner_image.jpg);
+  /* background: linear-gradient(to bottom, #03975967,#03975931), url(/Images/Home/banner_image.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: red;
+  z-index: 9999999;
 
 }
 .map{

@@ -1,13 +1,7 @@
 .container{
     margin: auto;
-    max-width: 1500px;
-    margin-inline: 4rem;
-}
-.content_exterior{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    max-width: 1600px;
+    padding-inline: 4rem;
 }
 .content_interior{
     display: flex;
@@ -23,19 +17,17 @@
 }
 .perSlide > img{
     height: 250px;
-    /* width: 300px; */
+    width: 100%;
     object-fit: cover;
 }
 .text_content{
-    width: 30vw;
-    
-    /* padding-left: 6rem; */
+    width: 35vw;
 }
 .text_content > p{
     text-align: justify;
 }
 .slider{
-    width: 70vw;
+    width: 65vw;
 }
 .info{
     font-size: 14px;
@@ -48,3 +40,18 @@
     color: var(--color-primary-dark);
 }
 
+@media screen and (max-width:1200px){
+    .content_exterior{
+        flex-direction: column;
+    }
+    .container{
+        padding-inline: 1rem;
+    }
+    .text_content{
+        width: 90vw;
+    }
+    .slider{
+        width: 90vw;
+    }
+
+}

@@ -1,0 +1,25 @@
+.safety{
+    font-size: 4rem;
+    padding-left: 8rem ;
+    padding-block: 6rem;
+    /* background: linear-gradient(to bottom, #03975967,#03975931), url(/Images/Home/banner_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+   
+  
+  }
+  .backgroundOverlay {
+    background-color: #1a1a1a;
+    opacity: 0.3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }

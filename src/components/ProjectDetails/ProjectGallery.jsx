@@ -1,17 +1,18 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import styles from './ProjectGallery.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
+import {publicURL} from '../../api/axiosConfig'
+const ProjectGallery = ({archImages}) => {
 
-const ProjectGallery = () => {
   return (
     <section className={styles.container}>
         <div className={styles.header}>
-            <h2>For Those Who Know How To Choose</h2>
-            <p>Windows, skylights, vents, and glass portions of doors helps to control solar heat loss and gains runway heading towards.</p>
+            <h2>Architectural Images</h2>
+            <p>Isometric View / Typical Floor Plan / Master Plan</p>
         </div>
         <div className={styles.content}>
-        <Splide aria-label="My Favorite Images" 
+        <Splide aria-label="Architectural Images" 
         options={{
             perPage: 3,
             gap: '2rem',
@@ -25,21 +26,11 @@ const ProjectGallery = () => {
           }
         }
         }>
-            <SplideSlide>
-                <img src="/Images/floorplan.jpg" className={styles.image} alt="Image 1"/>
-            </SplideSlide>
-            <SplideSlide>
-                <img src="/Images/floorplan.jpg" className={styles.image} alt="Image 2"/>
-            </SplideSlide>
-            <SplideSlide>
-                <img src="/Images/floorplan.jpg" className={styles.image} alt="Image 2"/>
-            </SplideSlide>
-            <SplideSlide>
-                <img src="/Images/floorplan.jpg" className={styles.image} alt="Image 2"/>
-            </SplideSlide>
-            <SplideSlide>
-                <img src="/Images/floorplan.jpg" className={styles.image} alt="Image 2"/>
-            </SplideSlide>
+            {archImages.map((item,index)=>(
+                <SplideSlide key={item.id}>
+                    <img src={`${publicURL}${item.image}`} className={styles.image} alt="architectural image"/>
+                </SplideSlide>
+            ))}
         </Splide>
 
         </div>

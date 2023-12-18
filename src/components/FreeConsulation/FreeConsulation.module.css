@@ -1,11 +1,11 @@
 .consulationSection {
-  background-image: linear-gradient(#1a1a1834,#1a1a1834), url("/Images/Home/banner_image.jpg");
+  /* background-image: linear-gradient(#1a1a1834,#1a1a1834), url("/Images/Home/banner_image.jpg"); */
   padding: 5rem;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  margin-block: 7rem;
+  /* margin-block: 7rem; */
   overflow: hidden;
 }
 

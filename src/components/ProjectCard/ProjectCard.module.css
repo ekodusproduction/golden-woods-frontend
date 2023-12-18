@@ -41,8 +41,13 @@
 }
 .buttons{
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin-top: 1rem;
+}
+.downloadbrochure{
+    color: black;
+    font-weight: 600;
 }
 @media screen and (max-width:1024px){
     .project_desc{

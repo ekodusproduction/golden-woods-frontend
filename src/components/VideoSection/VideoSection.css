@@ -1,0 +1,24 @@
+.video_container{
+    margin-block: 4rem;
+}
+
+.video-react .video-react-big-play-button {
+    height: 2em!important;
+    width: 2em!important;
+    border-radius: 50%!important;
+    display: block;
+    position: absolute;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+  }
+  .video-react , .video-react .video-react-big-play-button:before {
+    top: 6px !important; 
+  }
+
+
+@media screen and (max-width:1200px){
+    .video_container{
+        width:100vw;
+    }
+}

@@ -1,5 +1,5 @@
 .container{
-    background: linear-gradient(#0000003b,#0000003b),url(/public/Images/home_consultation.JPG);
+    /* background: linear-gradient(#0000003b,#0000003b),url(/public/Images/home_consultation.JPG); */
     background-size: cover;
     background-position: center;
     display: flex;

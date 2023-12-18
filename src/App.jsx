@@ -8,6 +8,7 @@ import ComingSoon from "./components/ComingSoon/ComingSoon";
 import Property from "./Pages/Property/Property";
 import PropertyDetails from "./Pages/PropertyDetails/PropertyDetails";
 import Blogs from "./Pages/Blogs/Blogs";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 
@@ -27,6 +28,7 @@ function App() {
    
     <Router>
       <ScrollToTop/>
+      <ParallaxProvider>
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -36,6 +38,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
       </Routes>
+      </ParallaxProvider>
     </Router>
     </>
   );

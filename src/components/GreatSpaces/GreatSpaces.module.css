@@ -4,6 +4,8 @@
   align-items: center;
   gap: 4rem;
   overflow: hidden;
+  max-width: 1600px;
+  margin: auto;
 }
 
 /* content */

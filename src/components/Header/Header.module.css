@@ -1,9 +1,5 @@
 .header{
     height: 60vh;
-    background-image: linear-gradient(to bottom, #03975967,#03975931),url(/Images/Home/banner_image.jpg);
-    background-position:bottom;
-    background-attachment: fixed;
-    background-size: cover;
     color: white;
     display: flex;
     justify-content: center;

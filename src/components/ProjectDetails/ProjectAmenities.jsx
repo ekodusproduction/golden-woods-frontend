@@ -1,43 +1,38 @@
-import React from 'react'
+import { useEffect,useState } from "react"
 import styles from "./ProjectAmenities.module.css"
+import axiosConfig from '../../api/axiosConfig'
+import { publicURL } from "../../api/axiosConfig"
+const ProjectAmenities = ({projectId}) => {
+    const [amenity,setAmenity] = useState([])
 
-const ProjectAmenities = () => {
+    useEffect(()=> {
+ 
+        axiosConfig.get(`/project/amenity/get/${projectId}`)
+        .then(response => {
+          const responseData = response.data;
+          return JSON.parse(JSON.stringify(responseData.data));
+        })
+        .then(data => {
+          console.log(data)
+          setAmenity(data)
+         
+        })
+      
+      
+      },[])
+    //   console.log( projectInfo.project?.projectName)
+
   return (
     <section className={styles.container}>
         <h2 className={styles.header}>Amenities</h2>
         <div className={styles.content}>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon}/>
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
-            <div className={styles.content_card}>
-                <img src="/icons/experience.png" alt="" className={styles.icon} />
-                <h3>Amenity Title</h3>
-            </div>
+                {amenity.map((item,index)=> (
+                         <div className={styles.content_card}>
+                         <img src={`${publicURL}${item.amenityImage}`} alt="" className={styles.icon} />
+                         <h3>{item.amenityName}</h3>
+                     </div>
+                ))}
+            
         </div>
     </section>
   )

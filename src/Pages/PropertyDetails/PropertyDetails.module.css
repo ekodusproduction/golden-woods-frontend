@@ -1,8 +1,8 @@
 .header{
-    background: linear-gradient(#5e5f1c17,#9ea0282a), url(/public/Images/Home/home_about.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    /* background: linear-gradient(#5e5f1c17,#9ea0282a), url(/public/Images/Home/home_about.jpg); */
+    /* background-size: cover;
+    background-position: center; */
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,3 +37,12 @@
     right: 2rem;
     z-index: 99;
 }
+.backgroundOverlay {
+    background-color: #1a1a1a;
+    opacity: 0.3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
