@@ -73,7 +73,7 @@ const PropertyDetails = () => {
                       />
        <ProjectConfigurations configuration = {projectInfo.project?.flatConfig}/>
        <ProjectAmenities projectId={projectInfo.project?.id}/>
-       <VideoSection video={projectInfo.project?.projectVideo}/>
+       {/* <VideoSection video={projectInfo.project?.projectVideo} thumbnail={projectInfo.project?.projectThumbnail}/> */}
        <ProjectReach withinReach={projectInfo.project?.withinReach} image={projectInfo.project?.withinReachImage}/>
        <ProjectGallery archImages = {projectInfo.project?.images.architectural}/>
        <ProjectExterior exteriorImages = {projectInfo.project?.images.exterior}/>

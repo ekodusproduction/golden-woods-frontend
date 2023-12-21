@@ -8,23 +8,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     /* margin-top: 6rem; */
     position: relative;
     padding-inline: 3rem;
     /* margin-top: 3em; */
 }
-/* .header::after{
-    content: "";
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 64px;
-    bottom: -20px;
-  
-    background-color: var(--color-primary);
-} */
+
 .heading{
     font-size: 3rem;
     position: relative;
@@ -43,7 +34,7 @@
     margin-top: 3rem;
     color: #5a5a5a;
     line-height: 27px;
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
     /* text-align: justify; */
 }

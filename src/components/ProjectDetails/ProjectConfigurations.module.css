@@ -23,11 +23,17 @@
     padding: 1rem 2rem;
     max-width: 1400px;
 }
+.parallaxcontainer{
+    height: 450px;
+}
 @media screen and (max-width:650px){
     .content_card{
         flex-direction: column;
         gap: 1rem;
         width: 300px;
+    }
+    .parallaxcontainer{
+        height: 750px;
     }
 
 }

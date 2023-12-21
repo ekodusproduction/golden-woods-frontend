@@ -60,7 +60,15 @@
         flex-direction: column;
         gap: 4rem;
         margin-block: 6rem;
+        padding-left: 0;
     }
+    .main_image{
+        width: 90vw;
+        border: 1px solid white;
+        
+    }
+ 
+    
     .content{
         width: 90vw;
     }

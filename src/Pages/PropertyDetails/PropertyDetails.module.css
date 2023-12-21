@@ -34,7 +34,7 @@
 .header_button{
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    right: 10rem;
     z-index: 99;
 }
 .backgroundOverlay {
@@ -46,3 +46,19 @@
     top: 0;
     left: 0;
   }
+@media screen and (max-width:576px){
+    .header_project_name{
+        font-weight: 800;
+        font-size: 4rem;
+    }
+    .header_legend{
+        font-size:2rem;
+    }
+    .header_tagline{
+        font-size: 1.4rem;
+    }
+    .header_text{
+        padding: 1rem 3rem 3rem 3rem;
+    }
+
+}

@@ -179,6 +179,10 @@
     font-size: 14px;
     margin-top: 1rem;
   }
+  .mission_banner > img{
+   max-width:1400px!important;
+   width: 100%;
+  }
  .mission_subcontainer{
     margin-inline: 4rem;
     display: flex;

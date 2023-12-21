@@ -27,11 +27,11 @@ const Home = () => {
   return (
     <>
     <Navbar/>
-    <ParallaxBanner style={{height:'100%'}} >
+    <ParallaxBanner style={{height:'100vh'}} >
       <ParallaxBannerLayer image="/Images/Home/banner_image.jpg" speed={-5} scale={[1, 1.5]} translateY={-30}  />
           <section className={styles.homeContainer}>
             <div className={styles.backgroundOverlay}></div>
-            <article className={styles.heroContent} data-aos="fade-right" data-aos-once>
+            <article className={styles.heroContent} data-aos="fade-right" data-aos-once  data-aos-duration="500">
               <h1 className={styles.heading}>
                 Leaders In Quality Construction and Infrastructure
               </h1>

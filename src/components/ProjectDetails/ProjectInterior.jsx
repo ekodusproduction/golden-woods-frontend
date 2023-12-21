@@ -1,39 +1,90 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from './ProjectInterior.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import { publicURL } from '../../api/axiosConfig';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const ProjectInterior = ({interiorImages}) => {
-    const newinteriorImages = Array.from({ length: Math.ceil(interiorImages.length / 6) }, (_, index) =>
-    interiorImages.slice(index * 6, (index + 1) * 6)
-  );
+  const [imageIndex, setImageIndex] = useState(0);
+ 
+  const imgslides = interiorImages.map(item => {
+    return {src: `${publicURL}${item.image}`}
+})
+const [isOpen, setIsOpen] = useState(false);
+const newinteriorImages = Array.from({ length: Math.ceil(interiorImages.length / 6) }, (_, index) =>
+interiorImages.slice(index * 6, (index + 1) * 6)
+);
+const galleryHandler = (outerIndex,innerIndex) => {
+  const calculatedIndex = outerIndex * 6 + innerIndex;
+  setImageIndex(calculatedIndex)
+
+  setIsOpen(true);
+}
+const handleGalleryClose = () => {
+  setIsOpen(false);
+}
 
   return (
     <section className={styles.container}>
-    <div className={styles.content_interior}>
-        <div className={styles.text_content}>
-            <p className={styles.subhead}>Interior</p>
-            <h2 className={styles.head}>Our Interior Gallery awaits your inspiration.</h2>
-            <p className={styles.info}>Embark on a visual journey through our expansive Interior Gallery, where every image narrates the story of impeccable design, luxury, and comfort. Discover a symphony of elegance, innovation, and timeless style that awaits in every corner of your dream home</p>
+        <div className={styles.content_interior}>
+            <div className={styles.text_content}>
+                <p className={styles.subhead}>Exterior</p>
+                <h2 className={styles.head}>Human-Centered Design Friendly Spaces</h2>
+                <p className={styles.info}>Flexible, Contemporary Spaces. We design and
+                    service the next generation building. Our design
+                    philosophy and continuous improvement
+                    methodology aims to enhance the experience of
+                    every user of our spaces</p>
+            </div>
+            <div className={styles.slider}>
+                <Splide aria-label="My Favorite Images"
+                options={{perPage:1}}>
+                    {newinteriorImages.map((items,outerIndex) => (
+                        <SplideSlide>
+                        <div className={styles.perSlide}>
+                            {items.map((item,innerIndex)=> (
+                                <>
+                                <img src={`${publicURL}${item.image}`} key={item.id} alt="Image 1" onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
+                                </>
+                            ))}     
+                        </div>
+                    </SplideSlide>
+                    ))} 
+                </Splide>
+            </div>
+
+
+            <div className={styles.slider_mobile}>
+                <Splide aria-label="My Favorite Images" options={{ perPage: 1, pagination: true }}>
+                    {interiorImages.map((item, index) => (
+                    
+                        <SplideSlide key={index}>
+                            <img
+                            src={`${publicURL}${item.image}`}
+                            key={item.id}
+                            alt={`Image ${index}`}
+                            onClick={() => galleryHandler(0,index)}
+                            />
+                        </SplideSlide>
+                    
+                   
+                    ))}
+                </Splide>
+            </div>
+
         </div>
-        <div className={styles.slider}>
-        <Splide aria-label="My Favorite Images"
-        options={{perPage:1}}>
-          {newinteriorImages.map(items => (
-                    <SplideSlide>
-                    <div className={styles.perSlide}>
-                        {items.map(item=> (
-                             <img src={`${publicURL}${item.image}`} key={item.id} alt="Image 1"/>
-                        ))}
-                       
-                    </div>
-                </SplideSlide>
-                ))}
-        </Splide>
-        </div>
-    </div>
-</section>
+        
+       
+        <Lightbox
+             open={isOpen}
+            close={handleGalleryClose}
+            slides={[imgslides[imageIndex]]} 
+        />
+      
+       
+    </section>
   )
 }
 

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route , useLocation} from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -9,6 +9,9 @@ import Property from "./Pages/Property/Property";
 import PropertyDetails from "./Pages/PropertyDetails/PropertyDetails";
 import Blogs from "./Pages/Blogs/Blogs";
 import { ParallaxProvider } from 'react-scroll-parallax';
+
+import Chatbot from "./components/Chatbot/Chatbot.jsx"; 
+
 
 
 
@@ -23,12 +26,26 @@ const ScrollToTop = () => {
 };
 
 function App() {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+
+  const toggleChatbot = () => {
+    setIsChatbotOpen((prev) => !prev);
+  };
   return (
     <>
    
     <Router>
       <ScrollToTop/>
       <ParallaxProvider>
+        <div className='chatbot_container'>
+            {isChatbotOpen && (
+              <div className="chatbot">
+                <Chatbot/>
+            </div>
+          )}
+          <button onClick={toggleChatbot} className="chatbot_btn"><img src="/icons/chatbot.png" alt="" /></button>
+      </div>
+      
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/contact" element={<Contact />} />
