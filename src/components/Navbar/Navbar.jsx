@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${navbarStyles} ${colorChange? styles.navwhite:''}`}>
       <div className={styles.logo}>
-        <img src={window.scrollY >= 280 ? "/Images/golden_woods_logo.png": "/Images/golden_woods_logo_white.png"} className={styles.logo_item} alt="" />
+        <img src={window.scrollY >= 280 ? "/Images/golden_woods_logo.png": "/Images/golden_woods_logo_white.png"} className={colorChange?styles.logo_item_small:styles.logo_item} alt="" />
       </div>
       <ul className={styles.navLinks} >
       <Link to="/" className={`${styles.navlink} ${colorChange? styles.navLinkBlack:''} `}>Home</Link>

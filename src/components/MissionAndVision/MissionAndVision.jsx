@@ -5,8 +5,8 @@ import Button from '../Button/Button'
 
 const MissionAndVision = () => {
   return (
-    <div className={styles.container} >
-        <div className={styles.mission}>
+    <div className={styles.container}  >
+        <div className={styles.mission} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
             <div className={styles.main_content}>
                 <div className={styles.header}>
                     <h2 className={styles.header_main}>Our Mission</h2>
@@ -31,7 +31,7 @@ const MissionAndVision = () => {
         </div>
 
         {/* Vision */}
-        <div className={styles.vission}>
+        <div className={styles.vission} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
             <div className={styles.main_content}>
                 <div className={styles.header}>
                     <h2 className={styles.header_main}>Our Vision</h2>

@@ -11,8 +11,8 @@ const GreatSpaces = () => {
   },[]);
 
   return (
-    <section className={`${styles.greatSpacesSection} section_gap`}>
-      <article className={styles.contentContainer} data-aos="fade-right" data-aos-duration="500" data-aos-once>
+    <section className={`${styles.greatSpacesSection} `}>
+      <article className={styles.contentContainer} data-aos="fade-right" data-aos-duration="700" data-aos-once>
         <h2 className={styles.sectionHeading}>
           Great Spaces for Perfection <br /> & Class at Best Prices
         </h2>
@@ -34,7 +34,7 @@ const GreatSpaces = () => {
       </article>
       
       
-      <div className={styles.borderContainer } data-aos="fade-left" data-aos-duration="500" data-aos-once>
+      <div className={styles.borderContainer } data-aos="fade-left" data-aos-duration="700" data-aos-once>
         <img src="/Images/Home/home_about.jpg" alt='' className={styles.section_image} /> 
       </div>
     </section>

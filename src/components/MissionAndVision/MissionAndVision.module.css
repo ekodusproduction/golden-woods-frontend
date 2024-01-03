@@ -4,6 +4,16 @@
 }
 .header_main{
     font-size: 3rem;
+    position: relative;
+}
+.header_main::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 64px;
+    bottom: -15px;
+    background-color: var(--color-primary);
 }
 .mission{
     display: flex;
@@ -32,7 +42,7 @@
     text-align: justify;
     color: #494949;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .vission{

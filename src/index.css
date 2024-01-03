@@ -47,14 +47,14 @@ body {
   background-color: white;
   height: 100vh;
 }
-.section_gap{
-  margin-block: 12rem;
+/* .section_gap{
+  margin-block: 8rem;
 }
 @media screen and (max-width:1024px){
   .section_gap{
     margin-block: 8rem;
   }
-}
+} */
 .chatbot_container{
   position: fixed;
   z-index: 99;

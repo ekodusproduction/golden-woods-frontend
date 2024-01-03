@@ -27,25 +27,26 @@ const Home = () => {
   return (
     <>
     <Navbar/>
-    <ParallaxBanner style={{height:'100vh'}} >
-      <ParallaxBannerLayer image="/Images/Home/banner_image.jpg" speed={-5} scale={[1, 1.5]} translateY={-30}  />
           <section className={styles.homeContainer}>
+          <video autoPlay muted loop  className={styles.video}>
+            <source src="/dummy_back_video.mp4" type="video/mp4"/>
+          </video>
             <div className={styles.backgroundOverlay}></div>
-            <article className={styles.heroContent} data-aos="fade-right" data-aos-once  data-aos-duration="500">
-              <h1 className={styles.heading}>
+            <article className={styles.heroContent} >
+              <h1 className={styles.heading}  data-aos="fade-right" data-aos-once  data-aos-duration="900"  >
                 Leaders In Quality Construction and Infrastructure
               </h1>
-              <p className={styles.heroTagline}>
+              <p className={styles.heroTagline} data-aos="fade-right" data-aos-once  data-aos-duration="900" >
                 Welcome to the Golden Woods Developers, Where We Build your Dream
                 Home
               </p>
-              <div className={styles.btnContainer}>
+              <div className={styles.btnContainer}  data-aos="fade-right" data-aos-once  data-aos-duration="900" >
                 <Button type="primary" link="/comingsoon">Get Free Quote</Button>
                 <Button link="/comingsoon">Get in Touch</Button>
               </div>
             </article>
           </section>
-          </ParallaxBanner>
+         
         
               <GreatSpaces />
               <FreeConsulation />

@@ -45,7 +45,7 @@ const WhyChoose = () => {
   },[]);
 
   return (
-    <section className={`${styles.container} section_gap`}>
+    <section className={`${styles.container}`}>
    
       <div className={styles.content}>
        
@@ -76,7 +76,7 @@ const WhyChoose = () => {
             </header>
             <div className={styles.items}>
               {featureData.map((data,index) => (
-                <div className={styles.item} data-aos="fade-up" data-aos-once >
+                <div className={styles.item} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
                
                
                     <div className={styles.icon_container}>

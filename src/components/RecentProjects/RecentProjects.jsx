@@ -43,13 +43,13 @@ const RecentProjects = () => {
   return (
     <div className={`${styles.container} `}>
     
-      <div className={`${styles.header}`}>
+      <div className={`${styles.header}`} data-aos="fade-right"  data-aos-duration="700" data-aos-once >
          
           <h2 className={styles.heading}>Our Latest projects</h2>
           <p className={styles.header_desc}>Explore The Goldenwoods' Latest Projects: Setting New Standards in Real Estate Innovation. Discover Exceptional Design, Sustainable Living, and Unmatched Luxury Redefining Modern Living Spaces.</p>
           <Button type='primary' link="/comingsoon">Check all projects</Button>
       </div>
-      <div className={styles.project_container}>
+      <div className={styles.project_container} data-aos="fade-left"  data-aos-duration="700" data-aos-once >
       <Splide aria-label="My Favorite Images"  style={{padding: 0}}  options={{
     perPage: 2,
     breakpoints: {
@@ -66,6 +66,7 @@ const RecentProjects = () => {
               <img src="/Images/Home/banner_image.jpg" className={styles.project_image} alt="Image 1"/>
               <div className={styles.project_desc}>
                 <h3 className={styles.project_name}>Umang Nagaon</h3>
+                <Button type='primary'>Know More </Button>
               </div>
             </div>
           </SplideSlide>
@@ -74,6 +75,7 @@ const RecentProjects = () => {
               <img src="/Images/Home/mission_image.JPG" className={styles.project_image} alt="Image 2"/>
               <div className={styles.project_desc}>
                 <h3 className={styles.project_name}>Utsav Nalapara</h3>
+                <Button type='primary'>Know More </Button>
               </div>
             </div>
           </SplideSlide>
