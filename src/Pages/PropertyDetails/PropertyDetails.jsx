@@ -21,7 +21,7 @@ import "aos/dist/aos.css";
 
 
 
-const PropertyDetails = () => {
+const PropertyDetails = ({setFormOpen}) => {
   const [projectInfo,setProjectInfo] = useState({});
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -55,13 +55,13 @@ const PropertyDetails = () => {
         <div className={styles.backgroundOverlay}></div>
             <div className={styles.header}>
             <fieldset className={styles.header_text}>
-                <legend className={styles.header_legend}>Golden Woods</legend>
+                <legend className={styles.header_legend}><img src="Images/golden_woods_logo_white.png" alt="" /></legend>
                 <h2 className={styles.header_project_name}>{projectInfo.project?.projectName}</h2>
                 <p className={styles.header_tagline}>Complex Meant For <b>Urban Lifestyles</b> </p>
             </fieldset>
             </div>
             <div className={styles.header_button}>
-                <Button type={'btnPrimary'}>Download Brochure</Button>
+                <Button type={'btnPrimary'} link={`${publicURL}${projectInfo.project?.brochure}`}>Download Brochure</Button>
             </div>
         </section>
         </ParallaxBanner>
@@ -71,7 +71,7 @@ const PropertyDetails = () => {
                       mainImage = {projectInfo.project?.projectImage1}
                       secondaryImage = {projectInfo.project?.projectImage2}
                       />
-       <ProjectConfigurations configuration = {projectInfo.project?.flatConfig}/>
+       <ProjectConfigurations configuration = {projectInfo.project?.flatConfig} setFormOpen={setFormOpen}/>
        <ProjectAmenities projectId={projectInfo.project?.id}/>
        {/* <VideoSection video={projectInfo.project?.projectVideo} thumbnail={projectInfo.project?.projectThumbnail}/> */}
        <ProjectReach withinReach={projectInfo.project?.withinReach} image={projectInfo.project?.withinReachImage}/>

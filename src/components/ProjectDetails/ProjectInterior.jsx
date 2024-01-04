@@ -30,7 +30,7 @@ const handleGalleryClose = () => {
     <section className={styles.container}>
         <div className={styles.content_interior}>
             <div className={styles.text_content}>
-                <p className={styles.subhead}>Exterior</p>
+                <p className={styles.subhead}>Interior</p>
                 <h2 className={styles.head}>Human-Centered Design Friendly Spaces</h2>
                 <p className={styles.info}>Flexible, Contemporary Spaces. We design and
                     service the next generation building. Our design
@@ -78,9 +78,10 @@ const handleGalleryClose = () => {
         
        
         <Lightbox
+            index={imageIndex}
              open={isOpen}
             close={handleGalleryClose}
-            slides={[imgslides[imageIndex]]} 
+            slides={imgslides} 
         />
       
        

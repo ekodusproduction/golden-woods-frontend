@@ -85,9 +85,10 @@ const ProjectExterior = ({exteriorImages}) => {
         
        
         <Lightbox
+            index={imageIndex}
              open={isOpen}
             close={handleGalleryClose}
-            slides={[imgslides[imageIndex]]} 
+            slides={imgslides} 
         />
       
        

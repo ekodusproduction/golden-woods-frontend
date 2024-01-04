@@ -12,6 +12,7 @@ import Loader from '../../components/Loader/Loader';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 
+
 const Property = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const [allProjects, setAllProjects] = useState([]);
@@ -23,13 +24,11 @@ const Property = () => {
   useEffect(()=> {
     axiosConfig.get('/project/list')
     .then(response => {
+      console.log(response)
       const responseData = response.data;
-      return JSON.parse(JSON.stringify(responseData.data.data));
+      setAllProjects(responseData.data.data)
     })
-    .then(data => {
-      console.log(data)
-      setAllProjects(data)
-    })
+
   },[])
 
   return (
@@ -42,7 +41,7 @@ const Property = () => {
                 <div className={styles.header}>
                   <h2>Explore Our Projects</h2>
                 </div>
-                <p className={styles.property_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis et optio! Deserunt, consectetur. Qui iure doloribus magnam sequi ex facilis minus ipsum repudiandae eius tenetur nam, suscipit, excepturi nostrum unde! Veniam tempore laborum assumenda, ea quas expedita possimus harum! Aspernatur magni explicabo tenetur dolorum, sed numquam totam tempora quidem iusto minima</p>
+                {/* <p className={styles.property_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis et optio! Deserunt, consectetur. Qui iure doloribus magnam sequi ex facilis minus ipsum repudiandae eius tenetur nam, suscipit, excepturi nostrum unde! Veniam tempore laborum assumenda, ea quas expedita possimus harum! Aspernatur magni explicabo tenetur dolorum, sed numquam totam tempora quidem iusto minima</p> */}
                 <div className={styles.content}>
                     <div className={styles.projects_container}>
                       
@@ -59,7 +58,7 @@ const Property = () => {
                         }} >
                          
                           {allProjects.map((project )=> (
-                              <SplideSlide>
+                              <SplideSlide key={project.id}>
                             <ProjectCard key={project.id} projectInfo={project}/>
                             </SplideSlide>
                             
@@ -73,7 +72,8 @@ const Property = () => {
             <Footer/>
             
             
-      </div> : <Loader/> }
+      </div>
+       : <Loader/> }
      
       </>
   )

@@ -11,6 +11,7 @@
 }
 .image{
     border: 1px solid rgb(192, 192, 192);
+    cursor: pointer;
 }
 @media screen and (max-width:756px){
     .container{

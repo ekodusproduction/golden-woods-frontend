@@ -84,7 +84,7 @@
 @media screen and (max-width:756px){
     .container{
         flex-direction: column;
-        width: 70vw;
+        width: 90vw;
         margin: auto;
         align-items: flex-start;
         gap: 1rem;
@@ -92,19 +92,17 @@
         border-bottom: 1px solid #c7c7c7;
     }
     .image_container > img{
-        width: 100%;
+        width: 90vw;
     
     }
     .project_desc{
         display: block;
     }
-}
-@media screen and (max-width:576px){
-    .container{
+    .content{
         width: 90vw;
     }
-
 }
+
 @media screen and (max-width:390px){
     .buttons{
         gap: 1rem;

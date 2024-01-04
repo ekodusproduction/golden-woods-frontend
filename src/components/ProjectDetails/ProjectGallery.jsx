@@ -3,7 +3,29 @@ import styles from './ProjectGallery.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 import {publicURL} from '../../api/axiosConfig'
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+
+
 const ProjectGallery = ({archImages}) => {
+
+
+    const [imageIndex, setImageIndex] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
+    const imgslides = archImages.map(item => {
+        return {src: `${publicURL}${item.image}`}
+    })
+    console.log(imgslides)
+
+    const galleryHandler = (index) => {
+        setImageIndex(index)
+    
+        setIsOpen(true);
+      }
+    const handleGalleryClose = () => {
+        setIsOpen(false);
+      }
 
   return (
     <section className={styles.container}>
@@ -28,12 +50,21 @@ const ProjectGallery = ({archImages}) => {
         }>
             {archImages.map((item,index)=>(
                 <SplideSlide key={item.id}>
-                    <img src={`${publicURL}${item.image}`} className={styles.image} alt="architectural image"/>
+                    <img src={`${publicURL}${item.image}`} className={styles.image} alt="architectural image" onClick={()=>galleryHandler(index)}/>
                 </SplideSlide>
             ))}
         </Splide>
 
         </div>
+
+        <Lightbox
+            index={imageIndex}
+             open={isOpen}
+            close={handleGalleryClose}
+            slides={imgslides} 
+    
+            
+        />
     </section>
   )
 }

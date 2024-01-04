@@ -7,7 +7,7 @@
   max-width: 1600px;
   margin-inline: auto;
   padding-block: 8rem;
-  background-color: white;
+  background-color: white
 }
 
 /* content */
@@ -102,7 +102,7 @@
 }
 @media screen and (max-width:991px){
   .greatSpacesSection {
-    padding: 1rem 3rem;
+    padding: 5rem 3rem;
   }
 
 }
@@ -118,9 +118,7 @@
 
 }
 @media screen and (max-width:756px){
-  .greatSpacesSection {
-    padding: 1rem 2rem;
-  }
+ 
   .section_image{
     width: 90vw;
     margin: -20px 0 0 -20px;

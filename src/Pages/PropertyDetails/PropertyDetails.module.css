@@ -25,16 +25,19 @@
     font-size: 2rem;
 }
 .header_legend{
-    font-size:4rem;
-    font-weight: 600;
-    text-align: center;
-    padding-inline: 3rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header_legend > img{
+    width: 150px;
+   
+  
 }
 .header_button{
     position: fixed;
     bottom: 2rem;
-    right: 10rem;
+    left: 2rem;
     z-index: 99;
 }
 .backgroundOverlay {

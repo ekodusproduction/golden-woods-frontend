@@ -7,7 +7,8 @@ import { publicURL } from '../../api/axiosConfig'
 
 const ProjectCard = ({projectInfo}) => {
   const navigate = useNavigate()
-  console.log(JSON.parse(projectInfo.flatConfig))
+  console.log(projectInfo)
+
   return (
     <div className={styles.container}>
       <div className={styles.image_container}>

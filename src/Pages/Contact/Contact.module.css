@@ -1,9 +1,10 @@
 .contact_form_container{
-    margin: 6rem;
+    padding: 6rem;
     display: flex;
     gap: 3rem;
     align-items: center;
     justify-content: center;
+    background-color: white;
    
 }
 .contact_form{
@@ -96,7 +97,7 @@
 @media screen and (max-width:1024px){
     .contact_form_container{
         flex-direction: column;
-        margin: 4rem 2rem;
+        padding: 4rem 2rem;
     }
     .contact_form input, .contact_form button{
         width: 70vw;

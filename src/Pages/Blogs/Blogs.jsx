@@ -11,10 +11,11 @@ const Blogs = () => {
         <Navbar/>
         <Header title={'Blogs'}/>
         <div className={styles.container}>
+            {/* <BlogCard/>
             <BlogCard/>
             <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
+            <BlogCard/> */}
+            <p style={{textAlign:'center'}}>No blogs as of now! Check back later!</p>
 
         </div>
         <Footer/>

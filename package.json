@@ -21,6 +21,7 @@
     "react-18-image-lightbox": "^5.1.4",
     "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.11.0",
     "react-lazy-load-image-component": "^1.6.0",
     "react-modal": "^3.16.1",

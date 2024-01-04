@@ -132,7 +132,7 @@
 @media screen and (max-width:1024px){
     .container{
         flex-direction: column;
-        margin: 5rem 1rem;
+        padding: 5rem 1rem;
         gap: 2rem;
     }
     .project_container{
@@ -148,10 +148,11 @@
         width: 97vw;
     }
     .container{
-        margin: 5rem 0rem;
+        padding: 5rem 0rem;
     }
     .header{
-       
+        padding-inline: 1rem;
+        text-align: justify;
         align-items: center;
     }
    

@@ -33,7 +33,8 @@ const Chatbot = () => {
       
       
       
-   console.log(questions)
+   console.log(questions[currentStep]?.questionType)
+   console.log(currentStep)
  
    
 
@@ -61,8 +62,18 @@ const Chatbot = () => {
 
             </div>
             <form onSubmit={sendMessageHandler} className={styles.input}>
-                <input type="text" value={userMessage} required onChange={messageHandler} />
-                <button type="submit">Send</button>
+               {questions[currentStep]?.questionType=='subjective' && <>
+                    <input type="text" value={userMessage} required onChange={messageHandler} />
+                    <button type="submit">Send</button>
+               </>}
+               {questions[currentStep]?.questionType=='choice' && 
+               <div>
+                <div>
+                    <input type="radio" id="html" name="fav_language" value="HTML"/>
+                    <label for="html">HTML</label><br/>
+                </div>
+               </div>}
+               
             </form>
         </div>
     );

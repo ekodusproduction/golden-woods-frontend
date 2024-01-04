@@ -19,11 +19,14 @@ import Safety from '../../components/SafetySection/Safety';
 
 
 
-const Home = () => {
+const Home = ({setFormOpen}) => {
   useEffect(() => {
     AOS.init({ duration: 1500 });
   },[]);
-  
+  const formOpenHandler = () => {
+    setFormOpen(true);
+    document.body.style.overflow = "hidden"
+  }
   return (
     <>
     <Navbar/>
@@ -42,7 +45,7 @@ const Home = () => {
               </p>
               <div className={styles.btnContainer}  data-aos="fade-right" data-aos-once  data-aos-duration="900" >
                 <Button type="primary" link="/comingsoon">Get Free Quote</Button>
-                <Button link="/comingsoon">Get in Touch</Button>
+                <button className='special_button' onClick={formOpenHandler}>Get in Touch</button>
               </div>
             </article>
           </section>
