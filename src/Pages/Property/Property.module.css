@@ -1,25 +1,35 @@
 .container{
-    margin: 4rem;
+    padding: 4rem;
+    background-color: white;
+    overflow: hidden;
 }
 .header{
-    margin-block: 4rem 8rem;
+    margin-block: 1rem 4rem;
     position: relative;
+    text-align: center;
 }
 .header::after{
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -20px;
    
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 .header > h2{
     font-size: 3rem;
 }
+.property_desc{
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    text-align: center;
+}
 .projects_container{
-    margin-block: 4rem;
+    padding-block: 4rem;
 }
 .projects{
     display: flex;
@@ -57,7 +67,7 @@
 }
 @media screen and (max-width:576px){
     .container{
-        margin: 2rem;
+        padding: 2rem;
     }
     .header{
         text-align: center;

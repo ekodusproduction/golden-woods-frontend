@@ -12,27 +12,27 @@ import { Link } from 'react-router-dom';
 
 const featureData = [
   {
-    icon: <BsGraphUp size={15} color='white' className={styles.iconimg}/>,
+    icon: <BsGraphUp size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Experience",
     desc: "With years of experience in the real estate industry, the Golden Woods Developers brings a wealth of...",
   },
   {
-    icon: <BsFillPeopleFill size={15} color='white' className={styles.iconimg}/>,
+    icon: <BsFillPeopleFill size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Client-Centric Focus",
     desc: "Your dreams and aspirations are at the heart of everything we do. We take the time to understand your...",
   },
   {
-    icon: <AiOutlineCheckCircle size={20} color='white' className={styles.iconimg}/>,
+    icon: <AiOutlineCheckCircle size={25} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Tailored Solutions",
     desc: "Recognizing that each client is unique, we offer personalized solutions that align with your specific requirements...",
   },
   {
-    icon: <FaHandshake size={15} color='white' className={styles.iconimg}/>,
+    icon: <FaHandshake size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Transparent Communication",
     desc: "Trust is the cornerstone of our relationships. We pride ourselves on transparent and honest communication...",
   },
   {
-    icon: <MdGroups3 size={20} color='white' className={styles.iconimg}/>,
+    icon: <MdGroups3 size={25} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Passionate Team",
     desc: "Our success is driven by the passion and dedication of our team. From our sales executives to project managers...",
   },
@@ -79,11 +79,11 @@ const WhyChoose = () => {
                 <div className={styles.item} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
                
                
-                    <div className={styles.icon_container}>
-                       {data.icon}
-                   </div>
+                    {/* <div className={styles.icon_container}> */}
+                       {/* {data.icon} */}
+                   {/* </div> */}
                     <div className={styles.content_text}>
-                      <h3 className={styles.item_heading}>{data.heading}</h3>
+                      <h3 className={styles.item_heading}> {data.icon} {data.heading}</h3>
                       <p className={styles.item_desc}>{data.desc}</p>
                       <Link to="/about" className={styles.readMore}>Read More <BsArrowRight/></Link>
                   </div>

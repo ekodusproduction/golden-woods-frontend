@@ -15,19 +15,19 @@ const ProjectCard = ({projectInfo}) => {
       </div>
       <div className={styles.content}>
         <div className={styles.status}>
-          <p>Completed Project</p>
+          {/* <p>Completed Project</p> */}
         </div>
         <div className={styles.project_name}>
           <p className={styles.company_name}>Goldenwoods</p>
           <p className={styles.project_name_main}>{projectInfo.projectName}</p>
         </div>
         <div className={styles.basic_info}>
-          <p >1, 2 & 3 BHK</p>
-          <p>{projectInfo.location}</p>
+          {/* <p >1, 2 & 3 BHK</p> */}
+          {/* <p>{projectInfo.location}</p> */}
         </div>
-        <div>
+        {/* <div>
           <p className={styles.project_desc}>{projectInfo.description.slice(0,300)}</p>
-        </div>
+        </div> */}
         <div className={styles.buttons}>
           <Button link={`/propertydetails?id=${projectInfo.id}`} type={'btnPrimary'}>Know More</Button>
           <a href={`${publicURL}${projectInfo.brochure}`} target='_blank' download className={styles.downloadbrochure}>Download PDF</a>

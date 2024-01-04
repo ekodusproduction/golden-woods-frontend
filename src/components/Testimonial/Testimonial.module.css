@@ -5,6 +5,7 @@
     gap: 4rem;
     overflow: hidden;
     padding-block: 8rem;
+    background-color: white;
 }
 .testimony_left{
     width: 40vw;
@@ -17,10 +18,10 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -20px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 .subheader{
     margin-block: 3.5rem;

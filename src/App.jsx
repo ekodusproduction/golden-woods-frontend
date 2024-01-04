@@ -45,6 +45,9 @@ function App() {
           )}
           <button onClick={toggleChatbot} className="chatbot_btn"><img src="/icons/chatbot.png" alt="" /></button>
       </div>
+      <div className="contact_us_fixed">
+        <p>Contact Us</p>
+      </div>
       
       <Routes>
           <Route path='/' element={<Home />} />

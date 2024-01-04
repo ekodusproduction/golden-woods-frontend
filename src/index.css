@@ -55,6 +55,20 @@ body {
     margin-block: 8rem;
   }
 } */
+.contact_us_fixed{
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 45%;
+  background-color: #57aa6e;
+  writing-mode: vertical-rl; /* 'rl' stands for right-to-left */
+  text-orientation: mixed;
+  white-space: nowrap;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+}
 .chatbot_container{
   position: fixed;
   z-index: 99;

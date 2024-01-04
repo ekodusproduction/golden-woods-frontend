@@ -1,6 +1,6 @@
 .homeContainer {
   position: relative;
-  /* background-image: linear-gradient(to bottom, #03975967,#03975931),url(/Images/Home/banner_image.jpg); */
+  /* background: linear-gradient(to bottom, #03975967,#03975931),url(/Images/Home/banner_image.jpg); */
   /* background-position:bottom;
   background-attachment: fixed; */
   /* background-size: cover; */
@@ -9,6 +9,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
  
 }
 
@@ -16,13 +17,16 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  position: fixed;
+  top: 0;
+  z-index: -999;
 }
 
 
 .heading {
   font-size: 6rem;
-  font-weight: 500;
-  text-align: left;
+  font-weight: 600;
+  text-align: center;
   width: 20ch;
   margin-top: 4rem;
 }
@@ -31,10 +35,11 @@
 .heroContent {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   z-index: 4;
   position: absolute;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .heroTagline {
@@ -73,6 +78,7 @@
 .map{
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 .map_item{
   width: 95vw;

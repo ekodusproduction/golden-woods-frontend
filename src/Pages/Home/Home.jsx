@@ -31,10 +31,10 @@ const Home = () => {
           <video autoPlay muted loop  className={styles.video}>
             <source src="/dummy_back_video.mp4" type="video/mp4"/>
           </video>
-            <div className={styles.backgroundOverlay}></div>
+            {/* <div className={styles.backgroundOverlay}></div> */}
             <article className={styles.heroContent} >
               <h1 className={styles.heading}  data-aos="fade-right" data-aos-once  data-aos-duration="900"  >
-                Leaders In Quality Construction and Infrastructure
+                LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
               </h1>
               <p className={styles.heroTagline} data-aos="fade-right" data-aos-once  data-aos-duration="900" >
                 Welcome to the Golden Woods Developers, Where We Build your Dream

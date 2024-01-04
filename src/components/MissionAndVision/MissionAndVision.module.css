@@ -1,6 +1,7 @@
 .container{
-    margin-top: 8rem;
+    padding-top: 8rem;
     padding-inline: 8rem;
+    background-color: white;
 }
 .header_main{
     font-size: 3rem;
@@ -10,10 +11,10 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -15px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 .mission{
     display: flex;
@@ -29,7 +30,7 @@
 }
 .image{
     width: 40vw;
-    background-color: #cfcfcf;
+    background-color: #e0e0e0;
     margin: 16px 0 0 16px;
 }
 .image_item{

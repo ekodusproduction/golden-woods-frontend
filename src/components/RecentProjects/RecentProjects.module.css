@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    margin: 5rem;
+    padding: 5rem;
     overflow: hidden;
+    background-color: white;
 }
 .header{
     display: flex;
@@ -22,10 +23,10 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -20px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 .header_desc{
     margin-top: 3rem;

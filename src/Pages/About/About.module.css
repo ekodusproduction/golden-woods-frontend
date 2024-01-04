@@ -5,7 +5,8 @@
     justify-content: center;
     gap: 4rem;
     overflow: hidden;
-    margin-block: 8rem 4rem;
+    padding-block: 8rem 4rem;
+    background-color: white;
   }
   
   /* content */
@@ -121,7 +122,8 @@
     padding: 5px;
   }
   .whychooseus_container{
-    margin-block: 9rem;
+    padding-block: 9rem;
+    background-color: white;
   }
   .whychooseus_header{
     display: flex;
@@ -183,6 +185,9 @@
    max-width:1400px!important;
    width: 100%;
   }
+  .mission_container{
+    background-color: white;
+  }
  .mission_subcontainer{
     margin-inline: 4rem;
     display: flex;
@@ -230,7 +235,8 @@
 
 /* vission */
 .vission_container{
-    margin-block: 3rem;
+    padding-block: 3rem;
+    background-color: white;
 }
 .vission_subcontainer{
     margin-inline: 4rem;

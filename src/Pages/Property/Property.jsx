@@ -9,6 +9,8 @@ import 'react-tabs/style/react-tabs.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import axiosConfig from '../../api/axiosConfig'
 import Loader from '../../components/Loader/Loader';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/sea-green';
 
 const Property = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -40,39 +42,31 @@ const Property = () => {
                 <div className={styles.header}>
                   <h2>Explore Our Projects</h2>
                 </div>
+                <p className={styles.property_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis et optio! Deserunt, consectetur. Qui iure doloribus magnam sequi ex facilis minus ipsum repudiandae eius tenetur nam, suscipit, excepturi nostrum unde! Veniam tempore laborum assumenda, ea quas expedita possimus harum! Aspernatur magni explicabo tenetur dolorum, sed numquam totam tempora quidem iusto minima</p>
                 <div className={styles.content}>
-                  <Tabs selectedIndex={selectedTab} onSelect={index => handleTabChange(index)}   >
-                    <TabList className={styles.tablist}>
-                        <Tab className={`${styles.tabItem} ${selectedTab === 0 ? styles.selectedTab : ''}`}   >All Projects</Tab>
-                        <Tab className={`${styles.tabItem} ${selectedTab === 1 ? styles.selectedTab : ''} `}   >Ongoing Projects</Tab>
-                        <Tab className={`${styles.tabItem} ${selectedTab === 2 ? styles.selectedTab : ''}`} >Upcoming Projects</Tab>
-                        <Tab className={`${styles.tabItem} ${selectedTab === 3 ? styles.selectedTab : ''}`}   >Completed Projects</Tab>
-                    </TabList>
                     <div className={styles.projects_container}>
-                      <TabPanel>
-                        <div className={styles.projects}>
+                      
+                      <Splide aria-label="My Favorite Images"  style={{padding: 0}}  options={{
+                          perPage: 2,
+                          breakpoints: {
+                            756: {
+                              perPage: 1,
+                            },
+                          },
+                          pagination:'true',
+                          type    :'loop',
+                          autoplay: true,
+                        }} >
+                         
                           {allProjects.map((project )=> (
+                              <SplideSlide>
                             <ProjectCard key={project.id} projectInfo={project}/>
+                            </SplideSlide>
+                            
                           ))
                           }
-                        
-                        </div>
-                      </TabPanel>
-
-                      <TabPanel>
-                          {/* <ProjectCard/> */}
-                      </TabPanel>
-
-                      <TabPanel>
-                          {/* <ProjectCard/> */}
-                      </TabPanel>
-
-                      <TabPanel>
-                          {/* <ProjectCard/> */}
-                      </TabPanel>
+                        </Splide>
                     </div>
-                    
-                  </Tabs>
                 </div>
             </div>
 

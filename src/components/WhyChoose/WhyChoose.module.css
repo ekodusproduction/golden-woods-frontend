@@ -1,6 +1,7 @@
 
 .container{
-    margin-block: 5rem 10rem;
+    padding-block: 5rem 10rem;
+    background-color: white;
 }
 .content{
     /* width: 40vw; */
@@ -38,12 +39,12 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -20px;
     /* left: 50%; */
     /* transform: translateX(-50%); */
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
   }
   
 .content_body{
@@ -85,9 +86,13 @@
 .iconimg{
     width: 40px;
    
+   
 }
 .item_heading{
     font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .item_desc{
     font-size: 14px;
@@ -97,7 +102,7 @@
 }
 .image_container{
     width: 40vw;
-    background-color: #cfcfcf;
+    background-color: #e0e0e0;
     margin: 16px 0 0 16px;
    
    
