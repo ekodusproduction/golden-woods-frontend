@@ -12,26 +12,31 @@ import { Link } from 'react-router-dom';
 
 const featureData = [
   {
+    id:1,
     icon: <BsGraphUp size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Experience",
     desc: "With years of experience in the real estate industry, the Golden Woods Developers brings a wealth of...",
   },
   {
+    id:2,
     icon: <BsFillPeopleFill size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Client-Centric Focus",
     desc: "Your dreams and aspirations are at the heart of everything we do. We take the time to understand your...",
   },
   {
+    id:3,
     icon: <AiOutlineCheckCircle size={25} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Tailored Solutions",
     desc: "Recognizing that each client is unique, we offer personalized solutions that align with your specific requirements...",
   },
   {
+    id:4,
     icon: <FaHandshake size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Transparent Communication",
     desc: "Trust is the cornerstone of our relationships. We pride ourselves on transparent and honest communication...",
   },
   {
+    id:5,
     icon: <MdGroups3 size={25} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Passionate Team",
     desc: "Our success is driven by the passion and dedication of our team. From our sales executives to project managers...",
@@ -75,8 +80,8 @@ const WhyChoose = () => {
               </p>
             </header>
             <div className={styles.items}>
-              {featureData.map((data,index) => (
-                <div className={styles.item} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
+              {featureData.map((data) => (
+                <div className={styles.item} key={data.id} data-aos="fade-up"  data-aos-duration="700" data-aos-once >
                
                
                     {/* <div className={styles.icon_container}> */}

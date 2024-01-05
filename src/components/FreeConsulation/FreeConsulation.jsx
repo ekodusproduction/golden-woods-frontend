@@ -5,11 +5,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ParallaxBanner , ParallaxBannerLayer} from 'react-scroll-parallax';
 
-const FreeConsulation = () => {
-
+const FreeConsulation = ({setFormOpen}) => {
   useEffect(() => {
     AOS.init({ duration: 1500 });
   },[]);
+
+  const formOpenHandler = () => {
+    setFormOpen(true);
+    document.body.style.overflow = "hidden"
+  }
 
   return (
     <ParallaxBanner style={{height:'100%'}} >
@@ -25,7 +29,7 @@ const FreeConsulation = () => {
               Your Free Consulation Now!
             </p>
             <div data-aos="fade-right"  data-aos-duration="700" data-aos-once>
-              <Button type="primary" link="/comingsoon" >
+              <Button type="primary" clickHandler={formOpenHandler}>
                 Book an Appointment
               </Button>
             </div>

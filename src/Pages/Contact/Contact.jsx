@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
         </div>
         <div className={styles.map}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57296.498533632475!2d91.70857012167967!3d26.16311470000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a590fab4a9dff%3A0xab8952c09ed14a3b!2sThe%20Golden%20Woods%20Group!5e0!3m2!1sen!2sin!4v1697608009012!5m2!1sen!2sin" width="600" height="450" className={styles.map_item} allowfullscreen="" loading="lazy" ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57296.498533632475!2d91.70857012167967!3d26.16311470000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a590fab4a9dff%3A0xab8952c09ed14a3b!2sThe%20Golden%20Woods%20Group!5e0!3m2!1sen!2sin!4v1697608009012!5m2!1sen!2sin" width="600" height="450" className={styles.map_item} loading="lazy" ></iframe>
       </div>
         <Footer/>
     </div>

@@ -84,9 +84,9 @@ const Navbar = () => {
       </ul>
       <div className={styles.hamburgerContainer} >
         <article className={styles.hamburger} onClick={navbarActiveHandler}>
-          <span className={styles.hamburgerItem} style={{ backgroundColor: isOpen ? 'black' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
-          <span className={styles.hamburgerItem} style={{ backgroundColor: isOpen ? 'black' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
-          <span className={styles.hamburgerItem}  style={{ backgroundColor: isOpen ? 'black' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
+          <span className={styles.hamburgerItem} style={{ backgroundColor: isOpen ? 'white' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
+          <span className={styles.hamburgerItem} style={{ backgroundColor: isOpen ? 'white' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
+          <span className={styles.hamburgerItem}  style={{ backgroundColor: isOpen ? 'white' : window.scrollY >= 280 ? 'black' : 'white'}} ></span>
         </article>
       </div>
   

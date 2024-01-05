@@ -14,39 +14,36 @@ const ProjectAmenities = ({projectId}) => {
           return JSON.parse(JSON.stringify(responseData.data));
         })
         .then(data => {
-          console.log(data)
           setAmenity(data)
          
         })
       
       
       },[])
-    //   console.log( projectInfo.project?.projectName)
+ 
 
   return (
-    <section className={styles.container}>
-        <h2 className={styles.header}>Amenities</h2>
-        {/* <div className={styles.content}>
-                {amenity.map((item,index)=> (
-                         <div className={styles.content_card}>
-                         <img src={`${publicURL}${item.amenityImage}`} alt="" className={styles.icon} />
-                         <h3>{item.amenityName}</h3>
-                     </div>
-                ))}
-            
-        </div> */}
-         <Marquee>
-     
-                {amenity.map((item,index)=> (
-                        <div className={styles.content_card}>
-                         <img src={`${publicURL}${item.amenityImage}`} alt="" className={styles.icon} />
-                         <h3>{item.amenityName}</h3>
-                     </div>
-                ))}
-            
+    <>
+       {amenity.length!=0 && 
+          <section className={styles.container}>
+          <h2 className={styles.header}>Amenities</h2>
+  
+           <Marquee>
        
-        </Marquee>
-    </section>
+                  {amenity.map((item,index)=> (
+                          <div className={styles.content_card} key={index}>
+                           <img src={`${publicURL}${item.amenityImage}`} alt="" className={styles.icon} />
+                           <h3>{item.amenityName}</h3>
+                       </div>
+                  ))}
+              
+         
+          </Marquee>
+      </section>
+       
+       }
+    </>
+  
   )
 }
 

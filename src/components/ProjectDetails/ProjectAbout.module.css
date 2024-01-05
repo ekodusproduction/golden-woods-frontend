@@ -60,7 +60,7 @@
     .container{
         flex-direction: column;
         gap: 4rem;
-        margin-block: 6rem;
+        margin-block: 6rem 2rem;
         padding-left: 0;
     }
     .main_image{

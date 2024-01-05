@@ -14,17 +14,11 @@ import '@splidejs/react-splide/css/sea-green';
 
 
 const Property = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
   const [allProjects, setAllProjects] = useState([]);
-
-  const handleTabChange = (index) => {
-    setSelectedTab(index);
-  };
 
   useEffect(()=> {
     axiosConfig.get('/project/list')
     .then(response => {
-      console.log(response)
       const responseData = response.data;
       setAllProjects(responseData.data.data)
     })

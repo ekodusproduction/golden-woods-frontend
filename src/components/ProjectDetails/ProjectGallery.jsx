@@ -16,8 +16,7 @@ const ProjectGallery = ({archImages}) => {
     const imgslides = archImages.map(item => {
         return {src: `${publicURL}${item.image}`}
     })
-    console.log(imgslides)
-
+   
     const galleryHandler = (index) => {
         setImageIndex(index)
     

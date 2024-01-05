@@ -48,6 +48,7 @@
     font-size: 3.8rem;
     font-weight: 800;
     color: white;
+    text-align: center;
 }
 .basic_info{
     font-size: 2rem;
@@ -89,7 +90,6 @@
         align-items: flex-start;
         gap: 1rem;
         padding-bottom: 3rem;
-        border-bottom: 1px solid #c7c7c7;
     }
     .image_container > img{
         width: 90vw;
@@ -102,9 +102,9 @@
         width: 90vw;
     }
 }
-
-@media screen and (max-width:390px){
+@media screen and (max-width:500px){
     .buttons{
-        gap: 1rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 }

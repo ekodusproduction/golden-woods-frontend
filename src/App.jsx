@@ -33,7 +33,7 @@ function App() {
   const [isFormOpen, setFormOpen] = useState(false);
 
   const toggleChatbot = () => {
-    setIsChatbotOpen((prev) => !prev);
+    setIsChatbotOpen(true);
   };
   const formOpenHandler = () => {
     setFormOpen(true);
@@ -52,10 +52,10 @@ function App() {
         <div className='chatbot_container'>
             {isChatbotOpen && (
               <div className="chatbot">
-                <Chatbot/>
+                <Chatbot setIsChatbotOpen={setIsChatbotOpen}/>
             </div>
           )}
-          <button onClick={toggleChatbot} className="chatbot_btn"><img src="/icons/chatbot.png" alt="" /></button>
+          <button onClick={toggleChatbot} className="chatbot_btn">Chat with us</button>
       </div>
       <div className="contact_us_fixed">
         <button className="public_form_btn" onClick={formOpenHandler}>Contact Us</button>

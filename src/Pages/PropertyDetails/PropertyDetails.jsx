@@ -37,12 +37,10 @@ const PropertyDetails = ({setFormOpen}) => {
       return JSON.parse(JSON.stringify(responseData.data));
     })
     .then(data => {
-      console.log(data)
       setProjectInfo(data)
     })
   },[id])
 
-  console.log( projectInfo.project?.projectName)
 
   return (
     <div>

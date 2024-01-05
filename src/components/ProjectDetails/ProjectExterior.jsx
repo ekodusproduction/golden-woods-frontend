@@ -49,12 +49,12 @@ const ProjectExterior = ({exteriorImages}) => {
                 <Splide aria-label="My Favorite Images"
                 options={{perPage:1}}>
                     {newexteriorImages.map((items,outerIndex) => (
-                        <SplideSlide>
+                        <SplideSlide key={outerIndex}>
                         <div className={styles.perSlide}>
                             {items.map((item,innerIndex)=> (
-                                <>
+                               
                                 <img src={`${publicURL}${item.image}`} key={item.id} alt="Image 1" onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
-                                </>
+                              
                             ))}     
                         </div>
                     </SplideSlide>

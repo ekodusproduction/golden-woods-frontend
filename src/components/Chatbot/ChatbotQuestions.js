@@ -37,11 +37,13 @@ const chatbotQuestion= [
 export const fetchChatQuestions = async (setQuestions) => {
   try {
     const response = await axiosConfig.get('chatquestion/list');
-    chatbotQuestion.push(...response.data.chatQuestions)
-    setQuestions(chatbotQuestion);
+    const newChatbotQuestion = [...chatbotQuestion, ...response.data.chatQuestions]
+    setQuestions(newChatbotQuestion);
     console.log(response);
   } catch (error) {
     console.error(error);
   }
 };
+
+
 

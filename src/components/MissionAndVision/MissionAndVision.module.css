@@ -55,6 +55,9 @@
 }
 
 @media screen and (max-width:1024px){
+    .container{
+        padding-top: 0rem;
+    }
     .mission{
         flex-direction: column;
     }

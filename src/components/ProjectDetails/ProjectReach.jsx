@@ -11,7 +11,7 @@ const ProjectReach = ({withinReach,image}) => {
             <h2 className={styles.header}>Everything within Reach</h2>
             <ul className={styles.list}>
                 {withinReach.map((item,index)=> (
-                        <li className={styles.list_item}>
+                        <li className={styles.list_item} key={index}>
                         <BsCaretRightFill />
                         <p>{item?.name} - {item.distance}</p>
                     </li>

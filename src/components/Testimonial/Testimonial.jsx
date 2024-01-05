@@ -19,7 +19,7 @@ const Testimonial = () => {
                     Use these paragraphs to focus on the topic you want. 
                     Make sure you keep it short and attractive.</p>
             </div>
-            <div className={`${styles.testimony_card} ${styles.testimony_card_left}`} data-aos="fade-up-right" data-aos-once data-aos-duration="700">
+            <div className={`${styles.testimony_card} ${styles.testimony_card_left}`}>
                 <img src="/image/testimonials1.jpg" className={styles.testimony_image} alt="" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
@@ -35,7 +35,7 @@ const Testimonial = () => {
             </div>
         </div>
         <div className={styles.testimony_right}>
-        <div className={styles.testimony_card} data-aos="fade-down-left" data-aos-once data-aos-duration="700">
+        <div className={styles.testimony_card}  >
                 <img src="/image/testimonials2.jpg" className={styles.testimony_image} alt="" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
@@ -49,7 +49,7 @@ const Testimonial = () => {
 
                 </div>
             </div>
-            <div className={styles.testimony_card} data-aos="fade-up-left" data-aos-once data-aos-duration="700">
+            <div className={styles.testimony_card} >
                 <img src="/image/testimonial3.jpg" className={styles.testimony_image} alt="" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
