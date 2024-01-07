@@ -41,6 +41,8 @@ const PropertyDetails = ({setFormOpen}) => {
     })
   },[id])
 
+  console.log(projectInfo)
+
 
   return (
     <div>
@@ -59,7 +61,7 @@ const PropertyDetails = ({setFormOpen}) => {
             </fieldset>
             </div>
             <div className={styles.header_button}>
-                <Button type={'btnPrimary'} link={`${publicURL}${projectInfo.project?.brochure}`}>Download Brochure</Button>
+                <a className='special_button' target='_blank' href={`${publicURL}${projectInfo.project?.brochure}`}>Download Brochure</a>
             </div>
         </section>
         </ParallaxBanner>
@@ -68,6 +70,7 @@ const PropertyDetails = ({setFormOpen}) => {
                       overviewContent={projectInfo.project?.overviewContent}
                       mainImage = {projectInfo.project?.projectImage1}
                       secondaryImage = {projectInfo.project?.projectImage2}
+                      status = {projectInfo.project?.status}
                       />
        <ProjectConfigurations configuration = {projectInfo.project?.flatConfig} setFormOpen={setFormOpen}/>
        <ProjectAmenities projectId={projectInfo.project?.id}/>

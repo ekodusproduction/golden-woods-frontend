@@ -7,6 +7,15 @@
     max-width: 1500px;
     margin: auto;
     padding-bottom: 3rem;
+    overflow: hidden;
+}
+.status{
+    background-color: #3b3b3b;
+    color: white;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 .content{
     width: 40vw;

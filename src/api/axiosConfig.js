@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const publicURL = 'https://admin.goldenwoods.in/'
+export const publicURL = 'http://admin.goldenwoods.in/'
 const instance = axios.create({
-        baseURL: 'https://admin.goldenwoods.in/api'
+        baseURL: 'http://admin.goldenwoods.in/api'
     });
 
 export default instance
