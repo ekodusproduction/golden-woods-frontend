@@ -40,8 +40,9 @@ const PropertyDetails = ({setFormOpen}) => {
       setProjectInfo(data)
     })
   },[id])
-
   console.log(projectInfo)
+
+  
 
 
   return (
@@ -55,8 +56,8 @@ const PropertyDetails = ({setFormOpen}) => {
         <div className={styles.backgroundOverlay}></div>
             <div className={styles.header}>
             <fieldset className={styles.header_text}>
-                <legend className={styles.header_legend}><img src="Images/golden_woods_logo_white.png" alt="" /></legend>
-                <h2 className={styles.header_project_name}>{projectInfo.project?.projectName}</h2>
+                <legend className={styles.header_legend}>The Golden Woods</legend>
+                <h2 className={styles.header_project_name}><img className={styles.propertylogo} src={`${publicURL}${projectInfo.project?.propertyLogo}`} alt="" /></h2>
                 <p className={styles.header_tagline}>Complex Meant For <b>Urban Lifestyles</b> </p>
             </fieldset>
             </div>
@@ -79,7 +80,7 @@ const PropertyDetails = ({setFormOpen}) => {
        <ProjectGallery archImages = {projectInfo.project?.images.architectural}/>
        <ProjectExterior exteriorImages = {projectInfo.project?.images.exterior}/>
        <ProjectInterior interiorImages={projectInfo.project?.images.interior}/>
-       <ProjectInquiry/>
+       <ProjectInquiry projectName={projectInfo.project.projectName}/>
         <Footer/>
         </>
      ) : <Loader/>}

@@ -18,8 +18,8 @@ const ProjectAbout = ({overviewHeading,overviewContent,overviewFooter,mainImage,
             <h3 className={styles.content_tag}>{overviewFooter}</h3>
         </div>
         <div className={styles.images} data-aos="fade-left" data-aos-duration="500" data-aos-once>
-            <img src={`${publicURL}${mainImage}`} alt="" className={styles.main_image} />
-            <img src={`${publicURL}${secondaryImage}`} alt="" className={styles.secondary_image} />
+            <img src={`${publicURL}${mainImage}`} loading='lazy' alt="about image one" className={styles.main_image} />
+            <img src={`${publicURL}${secondaryImage}`} loading='lazy' alt="about image two" className={styles.secondary_image} />
         </div>
 
     </section>

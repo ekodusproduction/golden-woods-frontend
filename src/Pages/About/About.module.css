@@ -1,3 +1,10 @@
+.sections_container{
+  background-color: rgb(240, 240, 240);
+}
+.about_super_container{
+  max-width: 1600px;
+  margin: auto;
+}
 .greatSpacesSection {
     padding: 1rem 8rem;
     display: flex;
@@ -7,6 +14,8 @@
     overflow: hidden;
     padding-block: 8rem 4rem;
     background-color: white;
+    max-width: 1600px;
+    margin: auto;
   }
   
   /* content */
@@ -36,11 +45,11 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: 0;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
   }
   
   .subHeading {
@@ -139,12 +148,12 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
   }
   .whychooseus_header_subline{
     width: 100ch;
@@ -182,8 +191,9 @@
     margin-top: 1rem;
   }
   .mission_banner > img{
-   max-width:1400px!important;
-   width: 100%;
+   max-width:1600px!important;
+   /* width: 100vw; */
+   
   }
   .mission_container{
     background-color: white;
@@ -193,7 +203,7 @@
     display: flex;
  }
   .mission_image{
-    margin-top: -100px;
+    margin-top: -150px;
   }
   .mission_image img{
     width: 40vw;
@@ -226,11 +236,11 @@
   content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -10px;
     left: 0%;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 
 /* vission */
@@ -277,11 +287,11 @@
   content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -10px;
     left: 0%;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
 }
 .vission_main_body ul{
     list-style: none;

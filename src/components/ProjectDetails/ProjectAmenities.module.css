@@ -2,7 +2,7 @@
     padding: 4rem;
     max-width: 1500px;
     margin: auto;
-    background: url(/public/image/whychooseusback.jpg);
+    background: url(/static_files/background_pattern.jpg);
     background-size: cover;
 }
 .header{

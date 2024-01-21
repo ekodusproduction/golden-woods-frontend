@@ -20,7 +20,7 @@ const Testimonial = () => {
                     Make sure you keep it short and attractive.</p>
             </div>
             <div className={`${styles.testimony_card} ${styles.testimony_card_left}`}>
-                <img src="/image/testimonials1.jpg" className={styles.testimony_image} alt="" />
+                <img src="/static_files/testimonials1.jpg" className={styles.testimony_image} loading='lazy' alt="testimony person" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
                     <p className={styles.review_text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -36,7 +36,7 @@ const Testimonial = () => {
         </div>
         <div className={styles.testimony_right}>
         <div className={styles.testimony_card}  >
-                <img src="/image/testimonials2.jpg" className={styles.testimony_image} alt="" />
+                <img src="/static_files/testimonials2.jpg" className={styles.testimony_image} loading='lazy' alt="testimony person" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
                     <p className={styles.review_text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -50,7 +50,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className={styles.testimony_card} >
-                <img src="/image/testimonial3.jpg" className={styles.testimony_image} alt="" />
+                <img src="/static_files/testimonial3.jpg" className={styles.testimony_image} loading='lazy' alt="testimony person" />
                 <div className={styles.testimony_details}>
                     <ImQuotesLeft color='#FFC000' size={30}/> 
                     <p className={styles.review_text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 

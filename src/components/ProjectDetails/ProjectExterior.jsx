@@ -53,7 +53,7 @@ const ProjectExterior = ({exteriorImages}) => {
                         <div className={styles.perSlide}>
                             {items.map((item,innerIndex)=> (
                                
-                                <img src={`${publicURL}${item.image}`} key={item.id} alt="Image 1" onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
+                                <img src={`${publicURL}${item.image}`} key={item.id} loading='lazy' alt="exterior image" onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
                               
                             ))}     
                         </div>

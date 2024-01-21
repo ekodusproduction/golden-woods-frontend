@@ -46,7 +46,7 @@ const handleGalleryClose = () => {
                         <div className={styles.perSlide}>
                             {items.map((item,innerIndex)=> (
                                
-                                <img src={`${publicURL}${item.image}`} key={item.id} alt="Image 1" onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
+                                <img src={`${publicURL}${item.image}`} key={item.id} alt="Interior image" loading='lazy' onClick={()=>galleryHandler(outerIndex,innerIndex)}/>
                               
                             ))}     
                         </div>

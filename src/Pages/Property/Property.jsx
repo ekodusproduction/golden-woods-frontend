@@ -30,37 +30,39 @@ const Property = () => {
     {allProjects.length>0 ? 
       <div>
             <Navbar/>
-            <Header title={'Properties'}/>
-            <div className={styles.container}> 
-                <div className={styles.header}>
-                  <h2>Explore Our Projects</h2>
-                </div>
-                {/* <p className={styles.property_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis et optio! Deserunt, consectetur. Qui iure doloribus magnam sequi ex facilis minus ipsum repudiandae eius tenetur nam, suscipit, excepturi nostrum unde! Veniam tempore laborum assumenda, ea quas expedita possimus harum! Aspernatur magni explicabo tenetur dolorum, sed numquam totam tempora quidem iusto minima</p> */}
-                <div className={styles.content}>
-                    <div className={styles.projects_container}>
-                      
-                      <Splide aria-label="My Favorite Images"  style={{padding: 0}}  options={{
-                          perPage: 2,
-                          breakpoints: {
-                            756: {
-                              perPage: 1,
+            <Header title={'Projects'}/>
+            <div className={styles.sections_container}>
+              <div className={styles.container}> 
+                  <div className={styles.header}>
+                    <h2>Explore Our Projects</h2>
+                  </div>
+                  {/* <p className={styles.property_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis et optio! Deserunt, consectetur. Qui iure doloribus magnam sequi ex facilis minus ipsum repudiandae eius tenetur nam, suscipit, excepturi nostrum unde! Veniam tempore laborum assumenda, ea quas expedita possimus harum! Aspernatur magni explicabo tenetur dolorum, sed numquam totam tempora quidem iusto minima</p> */}
+                  <div className={styles.content}>
+                      <div className={styles.projects_container}>
+                        
+                        <Splide aria-label="My Favorite Images"  style={{padding: 0}}  options={{
+                            perPage: 2,
+                            breakpoints: {
+                              756: {
+                                perPage: 1,
+                              },
                             },
-                          },
-                          pagination:'true',
-                          type    :'loop',
-                          autoplay: true,
-                        }} >
-                         
-                          {allProjects.map((project )=> (
-                              <SplideSlide key={project.id}>
-                            <ProjectCard key={project.id} projectInfo={project}/>
-                            </SplideSlide>
-                            
-                          ))
-                          }
-                        </Splide>
-                    </div>
-                </div>
+                            pagination:'true',
+                            type    :'loop',
+                            autoplay: true,
+                          }} >
+                          
+                            {allProjects.map((project )=> (
+                                <SplideSlide key={project.id}>
+                              <ProjectCard key={project.id} projectInfo={project}/>
+                              </SplideSlide>
+                              
+                            ))
+                            }
+                          </Splide>
+                      </div>
+                  </div>
+              </div>
             </div>
 
             <Footer/>

@@ -19,8 +19,8 @@ const GreatSpaces = () => {
         <p className={styles.description}>
           Experience the pinnacle of luxury living with The Golden Woods
           Developers. With a deep-rooted passion for real estate, a dedication
-          to quality and a focus on sustainable development, we have become a
-          trendsetter in the Real Estate Industry across the Northease, and have
+          to quality and a focus on sustainability, we have become a
+          trendsetter in the Real Estate Industry across the Northeast, and have
           always focused on delivering the finest residential developments.
           <br />
         </p>
@@ -35,7 +35,7 @@ const GreatSpaces = () => {
       
       
       <div className={styles.borderContainer } data-aos="fade-left" data-aos-duration="700" data-aos-once>
-        <img src="/Images/Home/home_about.jpg" alt='' className={styles.section_image} /> 
+        <img src="/static_files/home_about.jpg" loading='lazy' alt='about image' className={styles.section_image} /> 
       </div>
     </section>
   );

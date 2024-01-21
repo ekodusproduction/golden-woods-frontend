@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  padding: 1rem 6rem;
+  padding: 5px 6rem;
   background-color: transparent;
   color: #0d1117;
   display: flex;
@@ -20,10 +20,10 @@
   box-shadow: 0 2px 5px -2px rgba(0,0,0,.2);
 }
 .logo_item{
-  width: 90px;
+  width: 100px;
 }
 .logo_item_small{
-  width: 70px;
+  width: 80px;
 }
 /* Nav Links */
 .navLinks{
@@ -119,6 +119,7 @@
 
 .navList a {
   padding-bottom: 1rem;
+  color: white;
   color: white;
   font-weight: 400;
   font-size: 2.3rem;

@@ -59,7 +59,7 @@ const OurExpertise = () => {
                                 <h3>Customised Solutions</h3>
                             </div>
                             
-                            <p className={styles.card_desc}>Recognizing that every client is unique, we tailor our services to meet your specific needs. Whether you’re a homebuyer, seller, investor or developer, we have the expertise to guide you through complexities of real estate transactions. </p>
+                            <p className={styles.card_desc}>Recognising that every client is unique, we tailor our services to meet your specific needs. Whether you’re a homebuyer, seller, investor or developer, we have the expertise to guide you through complexities of real estate transactions. </p>
                         </div>
                         <div className={`${styles.card} ${styles.card_mid}`}>
                             <div className={styles.card_icon}>
@@ -99,7 +99,7 @@ const OurExpertise = () => {
                   
 
                     <div className={styles.image_section}>
-                        <img src="/Images/Home/mission_image.JPG" className={styles.image}  alt="" />
+                        <img src="/static_files/mission_image.JPG" loading='lazy' className={styles.image}  alt="our expertise image" />
                     </div>
 
                    

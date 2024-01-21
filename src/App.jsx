@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route , useLocation} from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -13,6 +13,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Chatbot from "./components/Chatbot/Chatbot.jsx"; 
 import Button from "./components/Button/Button.jsx";
 import { IoClose } from "react-icons/io5";
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
 
 
 
@@ -31,6 +33,8 @@ const ScrollToTop = () => {
 function App() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   const [isFormOpen, setFormOpen] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false)
 
   const toggleChatbot = () => {
     setIsChatbotOpen(true);
@@ -43,6 +47,21 @@ function App() {
     setFormOpen(false);
     document.body.style.overflow = "auto"
   }
+      const form = useRef();
+      
+      const formSubmit = (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+            emailjs.sendForm('service_cs5vlng', 'template_74pnquo', form.current, 'hXVjB0wh5qLyBUqMq')
+                .then((result) => {
+                  setSubmitted(true);
+                }, (error) => {
+                    console.log(error.text);
+                })
+                .finally(() => {
+                  setSubmitting(false); // Re-enable the button and revert text
+                });
+      }
   return (
     <>
    
@@ -62,20 +81,24 @@ function App() {
       </div>
       {isFormOpen &&  
       <>
-       <div className="form_overlay" onClick={formCloseHandler}></div>
+      <div className="form_overlay" onClick={formCloseHandler}></div>
       <div className="public_form">
         <div className="public_form_header">
           <h3>Please fill in the details</h3>
           <button onClick={formCloseHandler}><IoClose color="white" size={25}/></button>
         </div>
-        <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Mobile Number" />
-         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-         <Button category={'primary'} type={'submit'} >Submit</Button>
+        <form action="" ref={form} onSubmit={formSubmit} >
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="text" placeholder="Email" name="email" required />
+          <input type="text" placeholder="Mobile Number" name="phone" required />
+         <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+         {submitted && <p style={{fontSize:'13px'}}>*Form has been successfully submitted</p>}
+         <button className="special_button" disabled={submitting}  style={submitting ? { cursor: 'not-allowed', opacity: 0.7 } : {}} category={'primary'} type={'submit'} >
+         {submitting ? 'Submitting...' : 'Submit'}
+         </button>
           
         </form>
+      
       </div>
       </>
        }

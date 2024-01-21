@@ -12,6 +12,9 @@
 .image{
     border: 1px solid rgb(192, 192, 192);
     cursor: pointer;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
 }
 @media screen and (max-width:756px){
     .container{

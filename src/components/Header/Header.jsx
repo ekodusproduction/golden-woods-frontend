@@ -6,7 +6,7 @@ const Header = ({title}) => {
   return (
   <div className={styles.header_container}>
         <video autoPlay muted loop  className={styles.video}>
-            <source src="/dummy_back_video.mp4" type="video/mp4"/>
+            <source src="/static_files/dummy_back_video.mp4" type="video/mp4"/>
         </video>
         <div className={styles.header}>
           <h2>{title}</h2>

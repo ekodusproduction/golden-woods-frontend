@@ -23,7 +23,7 @@ const ProjectConfigurations = ({configuration,setFormOpen}) => {
             <div className={styles.item} >
                 <div className={styles.overlay}></div>
                 <p className={styles.item_heading}>{configuration[0].type}</p>
-                <img src="/Images/1bhk.jpg" alt="" />
+                <img src="/static_files/1bhk.jpg" alt="1bhk image" loading='lazy'/>
                 <div className={styles.item_desc}>
                     <p>Carpet (Sq. Ft)</p>
                     <p><b>{configuration[0].size} sq. ft.</b></p>
@@ -33,7 +33,7 @@ const ProjectConfigurations = ({configuration,setFormOpen}) => {
             <div className={styles.item}>
                 <div className={styles.overlay}></div>
                 <p className={styles.item_heading}>{configuration[1].type}</p>
-                <img src="/Images/2bhk.jpg" alt="" />
+                <img src="/static_files/2bhk.jpg" alt="2 bhk image" loading='lazy' />
                 <div className={styles.item_desc}>
                     <p>Carpet (Sq. Ft)</p>
                     <p><b>{configuration[1].size} sq. ft.</b></p>
@@ -43,7 +43,7 @@ const ProjectConfigurations = ({configuration,setFormOpen}) => {
             <div className={styles.item} >
                 <div className={styles.overlay}></div>
                 <p className={styles.item_heading}>{configuration[2].type}</p>
-                <img src="/Images/3bhk.jpg" alt="" />
+                <img src="/static_files/3bhk.jpg" alt="3 bhk image" loading='lazy' />
                 <div className={styles.item_desc}>
                     <p>Carpet (Sq. Ft)</p>
                     <p><b>{configuration[2].size} sq. ft.</b></p>

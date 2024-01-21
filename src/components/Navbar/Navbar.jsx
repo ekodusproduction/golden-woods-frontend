@@ -12,7 +12,7 @@ const navbarData = [
     link: "/about",
   },
   {
-    title: "Property",
+    title: "Projects",
     link: "/property",
    
   },
@@ -54,8 +54,11 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${navbarStyles} ${colorChange? styles.navwhite:''}`}>
       <div className={styles.logo}>
-        <img src={window.scrollY >= 280 ? "/Images/golden_woods_logo.png": "/Images/golden_woods_logo_white.png"} className={colorChange?styles.logo_item_small:styles.logo_item} alt="" />
+        <Link to="/">
+         <img src={window.scrollY >= 280 ? "/static_files/golden_woods_logo.png": "/static_files/golden_woods_logo_white.png"} className={colorChange?styles.logo_item_small:styles.logo_item} alt="" />
+        </Link>
       </div>
+      
       <ul className={styles.navLinks} >
       <Link to="/" className={`${styles.navlink} ${colorChange? styles.navLinkBlack:''} `}>Home</Link>
       {navbarData.map((item) => {

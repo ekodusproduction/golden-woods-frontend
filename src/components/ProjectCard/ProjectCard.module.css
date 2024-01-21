@@ -7,6 +7,10 @@
     position: relative;
    
 }
+.city{
+    color: white;
+    text-align: center;
+}
 
 .image_container > img{
     width: 43vw;

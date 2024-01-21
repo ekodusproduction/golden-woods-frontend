@@ -5,7 +5,7 @@ import {BsArrowRight} from 'react-icons/bs'
 const BlogCard = () => {
   return (
     <div className={styles.blog_card}>
-        <img src="/Images/Home/whychooseus.jpg" alt="" className={styles.blog_image} />
+        <img src="/static_files/whychooseus.jpg" alt="" className={styles.blog_image} />
         <div>
             <div className={styles.content}>
                 <div className={styles.preheader}>
@@ -15,7 +15,7 @@ const BlogCard = () => {
                 <div>
                     <h3>Blog Title</h3>
                     <div className={styles.blog_author}>
-                        <img src="/image/profile.png" className={styles.profileimg} alt="" />
+                        <img src="/static_files/profile.png" className={styles.profileimg} alt="" />
                         <p className={styles.author_name}>Blog Author</p>
                     </div>
                 </div>

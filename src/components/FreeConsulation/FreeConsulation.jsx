@@ -17,16 +17,16 @@ const FreeConsulation = ({setFormOpen}) => {
 
   return (
     <ParallaxBanner style={{height:'100%'}} >
-        <ParallaxBannerLayer image="/Images/Home/banner_image.jpg" speed={-5} scale={[1, 1.5]} translateY={-30}  />
+        <ParallaxBannerLayer image="/static_files/banner_image.jpg" speed={-5} scale={[1, 1.5]} translateY={-30}  />
         <section className={styles.consulationSection}>
           <article className={styles.contentContainer}>
             <h2 className={styles.sectionHeading} data-aos="fade-right"  data-aos-duration="700" data-aos-once>
-              Unlock Your Dream <br /> Home with a Free Consulation!
+              Unlock Your Dream <br /> Home with a Free Consultation!
             </h2>
             <p className={styles.description} data-aos="fade-left"  data-aos-duration="700" data-aos-once >
-              Our expert real estate team is here to guide you every step of the
+              Our real estate expert team is here to guide you in every step of the
               way. Get personalized advice tailored to your unique needs. Schedule
-              Your Free Consulation Now!
+              Your Free Consultation Now!
             </p>
             <div data-aos="fade-right"  data-aos-duration="700" data-aos-once>
               <Button type="primary" clickHandler={formOpenHandler}>

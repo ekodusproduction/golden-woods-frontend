@@ -49,7 +49,7 @@ const ProjectGallery = ({archImages}) => {
         }>
             {archImages.map((item,index)=>(
                 <SplideSlide key={item.id}>
-                    <img src={`${publicURL}${item.image}`} className={styles.image} alt="architectural image" onClick={()=>galleryHandler(index)}/>
+                    <img src={`${publicURL}${item.image}`} className={styles.image} loading='lazy' alt="architectural image" onClick={()=>galleryHandler(index)}/>
                 </SplideSlide>
             ))}
         </Splide>

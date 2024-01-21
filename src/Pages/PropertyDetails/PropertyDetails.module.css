@@ -16,6 +16,7 @@
     align-items: center;
     gap: 1rem;
     border: 3px solid white;
+    background-color: rgb(255, 255, 255,0.4);
 }
 .header_project_name{
     font-weight: 800;
@@ -23,17 +24,18 @@
 }
 .header_tagline{
     font-size: 2rem;
+    color: black;
 }
 .header_legend{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3rem;
+    padding-inline: 10px;
+    font-weight: 400;
+    color: white;
+    
 }
-.header_legend > img{
-    width: 150px;
-   
-  
-}
+
 .header_button{
     position: fixed;
     bottom: 2rem;
@@ -48,6 +50,9 @@
     width: 100%;
     top: 0;
     left: 0;
+  }
+  .propertylogo{
+    width: 180px;
   }
 @media screen and (max-width:576px){
     .header_project_name{

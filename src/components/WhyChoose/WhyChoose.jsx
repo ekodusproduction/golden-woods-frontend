@@ -27,13 +27,13 @@ const featureData = [
     id:3,
     icon: <AiOutlineCheckCircle size={25} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Tailored Solutions",
-    desc: "Recognizing that each client is unique, we offer personalized solutions that align with your specific requirements...",
+    desc: "Recognising that each client is unique, we offer personalized solutions that align with your specific requirements...",
   },
   {
     id:4,
     icon: <FaHandshake size={20} color='#e1ad01' className={styles.iconimg}/>,
     heading: "Transparent Communication",
-    desc: "Trust is the cornerstone of our relationships. We pride ourselves on transparent and honest communication...",
+    desc: "Trust is the cornerstone of our relationship. We pride ourselves on transparent and honest communication...",
   },
   {
     id:5,
@@ -66,8 +66,8 @@ const WhyChoose = () => {
             </header>
             <div className={styles.image_container}>
 
-                <img src="/Images/Home/whychooseus.jpg" alt="" className={styles.image_section} />
-                <img src="/Images/Home/banner_image.jpg" alt="" className={`${styles.image_section} ${styles.second_image}`} />
+                <img src="/static_files/whychooseus.jpg" loading='lazy' alt="why choose us image" className={styles.image_section} />
+                <img src="/static_files/banner_image.jpg" alt="why choose us image" loading='lazy' className={`${styles.image_section} ${styles.second_image}`} />
             </div>
           </div>
           <div className={styles.item_container}>

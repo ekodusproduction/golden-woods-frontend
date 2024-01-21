@@ -2,6 +2,8 @@
     padding-top: 8rem;
     padding-inline: 8rem;   
     background-color: white;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .header_text{
@@ -13,11 +15,11 @@
     content: "";
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 64px;
     bottom: -20px;
 
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
   }
 .subhead{
     margin-block: 4rem 3rem;
@@ -86,12 +88,14 @@
 .image_section{
     display: block;
     width: 40vw;
+    max-width: 600px;
     height: fit-content;
     background-color: #cfcfcf;
     margin: 16px 0 0 16px;
 }
 .image{
     width: 40vw;
+    max-width: 600px;
     margin: -20px 0 0 -20px;
     padding: 0 20px 20px 0;
 }

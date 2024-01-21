@@ -23,7 +23,7 @@ const RecentProjects = () => {
     })
 
   },[])
-
+  console.log(allProjects)
 
   return (
     <div className={`${styles.container} `}>
@@ -36,34 +36,31 @@ const RecentProjects = () => {
       </div>
       <div className={styles.project_container} data-aos="fade-left"  data-aos-duration="700" data-aos-once >
       <Splide aria-label="My Favorite Images"  style={{padding: 0}}  options={{
-    perPage: 2,
-    breakpoints: {
-      756: {
-        perPage: 1,
-      },
-    },
-    pagination:false
-  //  arrows:false,
-
+        perPage: 2,
+        breakpoints: {
+          756: {
+            perPage: 1,
+          },
+        },
+        pagination:false
   }} >
       {allProjects.map(project=>(
+    
          <SplideSlide>
          <div className={styles.project}>
-           <img src={`${publicURL}/${project.projectImage1}`} className={styles.project_image} alt="Image 1"/>
+           <img src={`${publicURL}/${project.projectImage1}`} loading='lazy' className={styles.project_image} alt="project image"/>
            <div className={styles.project_desc}>
              <h3 className={styles.project_name}>{project.projectName}</h3>
+             <p className={styles.project_city}>{project.city}</p>
              <Button type='primary' link={`/propertydetails?id=${project.id}`}>Know More </Button>
            </div>
          </div>
        </SplideSlide>
-      ))}
-        
-         
+      
+     
+      ))}   
       </Splide>
       </div>
-            
-          
-      
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { publicURL } from '../../api/axiosConfig';
 const ProjectReach = ({withinReach,image}) => {
   return (
     <section className={styles.container}>
-        <img src={`${publicURL}${image}`} alt="" className={styles.image} />
+        <img src={`${publicURL}${image}`} alt="map" loading='lazy' className={styles.image} />
         <div className={styles.content}>
             <h2 className={styles.header}>Everything within Reach</h2>
             <ul className={styles.list}>

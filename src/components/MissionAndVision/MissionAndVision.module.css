@@ -2,6 +2,8 @@
     padding-top: 8rem;
     padding-inline: 8rem;
     background-color: white;
+    max-width: 1600px;
+    margin: auto;
 }
 .header_main{
     font-size: 3rem;

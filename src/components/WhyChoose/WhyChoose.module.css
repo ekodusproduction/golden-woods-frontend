@@ -2,6 +2,8 @@
 .container{
     padding-block: 2rem 7rem;
     background-color: white;
+    max-width: 1600px;
+    margin: auto;
 }
 .content{
     /* width: 40vw; */
@@ -55,6 +57,7 @@
 }
 .item_container{
     width: 45vw;
+    max-width: 700px;
 }
 .items{
     display: grid;
@@ -102,6 +105,7 @@
 }
 .image_container{
     width: 40vw;
+    max-width: 700px;
     background-color: #e0e0e0;
     margin: 16px 0 0 16px;
    
@@ -109,6 +113,7 @@
 }
 .image_section{
     width: 40vw;
+    max-width: 700px;
     margin: -20px 0 0 -20px;
     padding: 0 20px 20px 0;
 }

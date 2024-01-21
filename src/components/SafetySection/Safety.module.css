@@ -2,7 +2,7 @@
     font-size: 4rem;
     padding-left: 8rem ;
     padding-block: 6rem;
-    background: linear-gradient(to bottom, #0000001e,#0000001e), url(/Images/Home/banner_image.jpg);
+    background: linear-gradient(to bottom, #0000001e,#0000001e), url(/static_files/banner_image.jpg);
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */

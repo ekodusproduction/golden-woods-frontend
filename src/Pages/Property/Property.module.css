@@ -1,7 +1,12 @@
+.sections_container{
+    background-color: #f3f3f3;
+}
 .container{
     padding: 4rem;
     background-color: white;
     overflow: hidden;
+    max-width: 1600px;
+    margin: auto;
 }
 .header{
     margin-block: 1rem 4rem;
@@ -36,25 +41,7 @@
     flex-direction: column;
     gap: 6rem;
 }
-.tablist{
-    display: flex;
-  
-    font-weight: 600;
-    list-style: none;
-}
 
-.tabItem{
-    padding: 1rem 2rem;
-    cursor: pointer;
-    border: 1px solid #cecece;
-    
-  
-}
-
-.selectedTab{
-    background: rgb(134, 134, 134) !important ;
-    color: white !important;
-}
 
 
 @media screen and (max-width:756px){

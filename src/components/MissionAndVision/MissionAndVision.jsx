@@ -18,7 +18,7 @@ const MissionAndVision = () => {
                         <p>Empowering Dreams, Building Futures</p>
                         <span><ImQuotesRight  color='#e1ad01'/></span>
                     </div>
-                    <p>Our Mission is to be a beacon of Trust and Innovation in the real estate industry. We are dedicated to creating exceptional experiences for our clients by delivering unparalleled service, fostering lasting relationships and embracing cutting-edge technology.</p>
+                    <p>Our Mission is to be a beacon of Trust and Innovation in the real estate industry. We are dedicated to create exceptional experiences for our clients by delivering unparalleled service, fostering lasting relationships and embracing cutting-edge technology.</p>
                     <br />
                     <p>Guided by Integrity, Transparency and a Commitment to Excellence, we strive to exceed expectations in every transaction. Our team of skilled professionals work tirelessly to transform dreams into reality, helping individuals and families find their ideal homes and investors secure lucrative opportunities.</p>
 
@@ -26,7 +26,7 @@ const MissionAndVision = () => {
                 <Button type='primary' link="/about">Read More</Button>
             </div>
             <div className={styles.image}>
-                <img src="/Images/Home/mission_image.JPG" className={styles.image_item} alt="" />
+                <img src="/static_files/mission_image.JPG" loading='lazy' className={styles.image_item} alt="mission image" />
             </div>
         </div>
 
@@ -57,7 +57,7 @@ const MissionAndVision = () => {
                 <Button type='primary' link="/about">Read More</Button>
             </div>
             <div className={styles.image}>
-                <img src="/Images/Home/vision_image.JPG" className={styles.image_item} alt="" />
+                <img src="/static_files/vision_image.JPG" loading='lazy' className={styles.image_item} alt="vision image" />
             </div>
         </div>
 

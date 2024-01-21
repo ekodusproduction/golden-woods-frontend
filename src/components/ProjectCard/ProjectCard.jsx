@@ -4,6 +4,7 @@ import Button from '../Button/Button'
 import { publicURL } from '../../api/axiosConfig'
 
 const ProjectCard = ({projectInfo}) => {
+  console.log(projectInfo)
 
   return (
     <div className={styles.container}>
@@ -16,6 +17,7 @@ const ProjectCard = ({projectInfo}) => {
         <div className={styles.project_name}>
           <p className={styles.company_name}>Goldenwoods</p>
           <p className={styles.project_name_main}>{projectInfo.projectName}</p>
+          <p className={styles.city}> {projectInfo.city}</p>
         </div>
         <div className={styles.basic_info}>
          
