@@ -27,7 +27,9 @@ const handleGalleryClose = () => {
 }
 
   return (
-    <section className={styles.container}>
+    <>
+        {newinteriorImages.length>0 && 
+        <section className={styles.container}>
         <div className={styles.content_interior}>
             <div className={styles.text_content}>
                 <p className={styles.subhead}>Interior</p>
@@ -86,6 +88,10 @@ const handleGalleryClose = () => {
       
        
     </section>
+        
+        }
+    </>
+    
   )
 }
 
